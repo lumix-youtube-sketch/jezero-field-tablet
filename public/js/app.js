@@ -7,10 +7,10 @@ import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer
 import { Line2 } from 'three/addons/lines/Line2.js';
 import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
 import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
-import { findRoute, straightLine } from './route.js?v=202611151714';
-import { createDrive } from './drive.js?v=202611151714';
-import { createHiRes } from './hirise.js?v=202611151714';
-import { loadModel } from './models.js?v=202611151714';
+import { findRoute, straightLine } from './route.js?v=202611151917';
+import { createDrive } from './drive.js?v=202611151917';
+import { createHiRes } from './hirise.js?v=202611151917';
+import { loadModel } from './models.js?v=202611151917';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 
 const $ = (id) => document.getElementById(id);
@@ -129,7 +129,7 @@ const PLAY_SVG = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>', PAU
 loadMsg('Building 3D scene…');
 const host = $('scene');
 const renderer = new THREE.WebGLRenderer({ antialias: true, logarithmicDepthBuffer: true });
-renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
+renderer.setPixelRatio(new URLSearchParams(location.search).has('hq') ? devicePixelRatio : Math.min(devicePixelRatio, 1.5));
 renderer.setSize(innerWidth, innerHeight);
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.3;
 host.appendChild(renderer.domElement);

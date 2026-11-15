@@ -1,8 +1,8 @@
 // Crew-rover expeditions: drive a concept pressurized rover across real Jezero terrain.
 // Real data drives the physics and the science: CTX DEM slope/elevation, THEMIS night-IR ground
 // type, NASA sample table, rover raw images. Vehicle numbers are assumptions (rovermodel.js).
-import { ROVER, LOOSE_T, maxSpeed, powerKW, pathCost } from './rovermodel.js?v=202611151714';
-import { loadModel } from './models.js?v=202611151714';
+import { ROVER, LOOSE_T, maxSpeed, powerKW, pathCost } from './rovermodel.js?v=202611151917';
+import { loadModel } from './models.js?v=202611151917';
 
 export function createDrive(ctx) {
   const { THREE, scene, camera, controls, CSS2DObject, $, toast, store, wUV, elevUV, GW, GH, MPX, MPY, WM, HM, S, findRoute, lineMat, makeLine, MEDIA, CAM } = ctx;
@@ -546,5 +546,8 @@ export function createDrive(ctx) {
     return true;
   }
   return { start, exit, update, renderList, showKeys, serialize, restore, active: () => !!X, roverPos: () => (X ? rov.position : null), onExag: () => { if (X) { buildMarks(); rebuildTrail(); renderSites(); } },
-    _test: { teleport(i) { const n = X.def.nodes[i]; X.u = n.u + 20 / WM; X.v = n.v; X.moved = Math.max(X.moved, 400); }, state: () => X } };
+    _test: { teleport(i) { const n = X.def.nodes[i]; X.u = n.u + 20 / WM; X.v = n.v; X.moved = Math.max(X.moved, 400); }, state: () => X,
+      // used by the demo-video recorder's autopilot (follows the same A* safe route as the R key)
+      route: i => { const r = routeTo(i); return r && r.path.map(c => ({ u: c.x / (GW - 1), v: c.y / (GH - 1) })); }, dims: { WM, HM },
+      key(k, v) { keys[k] = v; const kc = document.querySelector(`.key[data-k="${k}"]`); if (kc) kc.classList.toggle('on', v); } } };
 }
