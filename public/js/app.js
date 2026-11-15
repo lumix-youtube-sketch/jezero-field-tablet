@@ -129,7 +129,7 @@ const PLAY_SVG = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>', PAU
 loadMsg('Building 3D scene…');
 const host = $('scene');
 const renderer = new THREE.WebGLRenderer({ antialias: true, logarithmicDepthBuffer: true });
-renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
 renderer.setSize(innerWidth, innerHeight);
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.3;
 host.appendChild(renderer.domElement);
@@ -411,15 +411,14 @@ function updateClock() {
 }
 function placeRover() {
   const i = Math.floor(trackPos), f = trackPos - i, a = TW[i], b = TW[Math.min(i + 1, TW.length - 1)];
-  const prev = rover.position.clone();
   rover.position.lerpVectors(a, b, f);
-  const n = TW[Math.min(i + 2, TW.length - 1)], dx = n.x - a.x, dz = n.z - a.z;
-  if (Math.hypot(dx, dz) > 1e-4) {
+  // heading from a point ~100 m ahead: stable at stops where consecutive points coincide (no spinning)
+  let j = i; while (j < TW.length - 1 && j - i < 80 && Math.hypot(TW[j].x - a.x, TW[j].z - a.z) < 5) j++;
+  const dx = TW[j].x - a.x, dz = TW[j].z - a.z;
+  if (Math.hypot(dx, dz) > 1.5) {
     const target = Math.atan2(-dz, dx); let d = target - roverModel.rotation.y; d = Math.atan2(Math.sin(d), Math.cos(d));
-    roverModel.rotation.y += d * (playing ? 0.25 : 1);
+    roverModel.rotation.y += d * (playing ? 0.08 : 1);
   }
-  wheelSpin += prev.distanceTo(rover.position) / S / 0.27 / Math.max(roverScale, 1);
-  for (const w of roverModel.userData.wheels) w.rotation.z = -wheelSpin;
 }
 
 // ================= DETAIL VIEW (guide stop / sample) =================
@@ -685,7 +684,9 @@ function exitMission() { drive.exit(); }
 
 // ================= MODES, INTRO, COACH MARKS =================
 let mode = null;
+let curTab = 'layers';
 function selectTab(name) {
+  curTab = name;
   document.querySelectorAll('.tabs button').forEach(x => x.classList.toggle('on', x.dataset.tab === name));
   document.querySelectorAll('[data-pane]').forEach(p => p.classList.toggle('hidden', p.dataset.pane !== name));
   if (name === 'route') { layer = 'slope'; applyLayer(); }
@@ -811,13 +812,13 @@ function loop() {
   requestAnimationFrame(loop);
   const t = clock.getElapsedTime(), dt = Math.min(0.1, t - lastT); lastT = t;
   if (playing) {
-    setTrackPos(trackPos + +$('speed').value);
+    setTrackPos(trackPos + +$('speed').value * dt * 60);   // frame-rate independent
     if ($('chkFollow').checked && !fly) { const d = rover.position.clone().sub(controls.target).multiplyScalar(0.12); controls.target.add(d); camera.position.add(d); }
     if (trackPos >= TRACK.length - 1) { stopPlay(); toast('Drive complete · <b>45.2 km</b>'); }
   }
   const driving = drive.active(), intro = document.body.classList.contains('intro-on');
   if (driving) { fly = null; drive.update(dt, t); }
-  hi.update(driving ? drive.roverPos() : (!intro && camera.position.distanceTo(controls.target) < 260 ? controls.target : null), layer === 'imagery' && !intro);
+  hi.update(driving ? drive.roverPos() : (!intro && !playing && camera.position.distanceTo(controls.target) < 160 ? controls.target : null), layer === 'imagery' && !intro);   // no tile streaming during replay
   rover.visible = !intro && !driving;
   stopGroup.visible = !intro && !driving && $('chkStops').checked;
   pinGroup.visible = !intro && !driving && $('chkSamples').checked;
@@ -883,7 +884,32 @@ function playIntro() {
 }
 $('btnSkipIntro').onclick = () => { fly = null; camera.position.copy(INTRO_END); finishIntro(); };
 controls.autoRotateSpeed = 0.35; setViewOffset();
-playIntro();
+// ---------- persistence: a page reload continues where the user was ----------
+const SAVE_KEY = 'jft-state-v1';
+function saveState() {
+  if (document.body.classList.contains('intro-on') || !mode) { store.set(SAVE_KEY, null); return; }
+  store.set(SAVE_KEY, { mode, trackPos, guide: curGuide, sample: curSample ? curSample.no : null, layer, tab: curTab,
+    cam: camera.position.toArray(), tgt: controls.target.toArray(), exag: EXAG, drive: drive.serialize(), t: Date.now() });
+}
+setInterval(saveState, 1500); addEventListener('beforeunload', saveState);
+document.addEventListener('visibilitychange', () => { if (document.hidden) saveState(); });
+function restoreState() {
+  const s = store.get(SAVE_KEY);
+  if (!s || !s.mode || Date.now() - s.t > 7 * 864e5) return false;
+  introDone = true; $('captions').innerHTML = ''; $('btnSkipIntro').classList.add('hidden'); $('introMain').classList.remove('hidden');
+  store.set('jft-coach', 1);
+  if (s.exag && s.exag !== EXAG) { EXAG = s.exag; $('exag').value = EXAG; $('exagV').textContent = `×${EXAG}`; rebuildAll(); }
+  setMode(s.mode);
+  if (s.drive && s.mode === 'drive' && drive.restore(s.drive)) return true;
+  selectTab(s.tab || 'layers'); layer = s.layer || 'imagery'; applyLayer();
+  setTrackPos(s.trackPos || 0);
+  if (s.mode === 'tour' && s.guide >= 0) openGuide(s.guide);
+  else if (s.sample) { const p = PLACED.find(x => x.no === s.sample); if (p) openSample(p, false); }
+  else if (s.mode !== 'tour') backToGuide();
+  fly = null; camera.position.fromArray(s.cam); controls.target.fromArray(s.tgt); controls.update();
+  return true;
+}
+if (!restoreState()) playIntro();
 loop();
 $('loading').classList.add('hidden');
 window.__app = { openGuide, openSample, setTrackPos, setMode, drive, hi, EXPED, PLACED, camera, controls };

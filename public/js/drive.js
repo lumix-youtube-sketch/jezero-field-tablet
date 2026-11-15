@@ -528,6 +528,23 @@ export function createDrive(ctx) {
   addEventListener('wheel', e => { if (!X) return; camDist = Math.min(90, Math.max(3, camDist * (1 + e.deltaY * 0.0012))); }, { passive: true });
 
   renderList();
-  return { start, exit, update, renderList, showKeys, active: () => !!X, roverPos: () => (X ? rov.position : null), onExag: () => { if (X) { buildMarks(); rebuildTrail(); renderSites(); } },
+  // persistence: a page reload continues the expedition where it was
+  function serialize() {
+    if (!X || X.ended) return null;
+    const { u, v, th, battery, kwh, hours, score, km, dose, visited, results, moved, nav } = X;
+    return { id: X.def.id, u, v, th, battery, kwh, hours, score, km, dose, visited, results, moved, nav, trailPts: X.trailPts.slice(-400), log: X.log.slice(-3000) };
+  }
+  function restore(s) {
+    const def = EXP.find(d => d.id === s.id); if (!def) return false;
+    start(def);
+    Object.assign(X, { u: s.u, v: s.v, th: s.th, battery: s.battery, kwh: s.kwh, hours: s.hours, score: s.score, km: s.km, dose: s.dose,
+      visited: s.visited, results: s.results, moved: s.moved, nav: s.nav, trailPts: s.trailPts, log: s.log, lastLogKm: s.km });
+    if (X.moved > 700) { X.keysFaded = true; $('keys').classList.add('faded'); }
+    tag.visible = X.moved <= 120; document.querySelector('.key[data-k="w"]').classList.remove('pulse');
+    const w = wUV(X.u, X.v); camera.position.set(w.x - 8, w.y + 5, w.z + 6); X.look = w.clone();
+    renderSites(); showPrompt('');
+    return true;
+  }
+  return { start, exit, update, renderList, showKeys, serialize, restore, active: () => !!X, roverPos: () => (X ? rov.position : null), onExag: () => { if (X) { buildMarks(); rebuildTrail(); renderSites(); } },
     _test: { teleport(i) { const n = X.def.nodes[i]; X.u = n.u + 20 / WM; X.v = n.v; X.moved = Math.max(X.moved, 400); }, state: () => X } };
 }
