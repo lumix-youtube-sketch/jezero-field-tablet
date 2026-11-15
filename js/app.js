@@ -1,4 +1,4 @@
-// Jezero Field Tablet — Perseverance's real mission on real NASA terrain.
+// Sol by Sol — Perseverance's real mission on real NASA terrain.
 // Whole-crater context terrain + high-res zone, rover replay, guided tour, samples
 // with real rover photos, safe-route planner and slope challenges.
 import * as THREE from 'three';
@@ -7,10 +7,10 @@ import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer
 import { Line2 } from 'three/addons/lines/Line2.js';
 import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
 import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
-import { findRoute, straightLine } from './route.js?v=202611151705';
-import { createDrive } from './drive.js?v=202611151705';
-import { createHiRes } from './hirise.js?v=202611151705';
-import { loadModel } from './models.js?v=202611151705';
+import { findRoute, straightLine } from './route.js?v=202611151714';
+import { createDrive } from './drive.js?v=202611151714';
+import { createHiRes } from './hirise.js?v=202611151714';
+import { loadModel } from './models.js?v=202611151714';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 
 const $ = (id) => document.getElementById(id);

@@ -1,8 +1,8 @@
 // Crew-rover expeditions: drive a concept pressurized rover across real Jezero terrain.
 // Real data drives the physics and the science: CTX DEM slope/elevation, THEMIS night-IR ground
 // type, NASA sample table, rover raw images. Vehicle numbers are assumptions (rovermodel.js).
-import { ROVER, LOOSE_T, maxSpeed, powerKW, pathCost } from './rovermodel.js?v=202611151705';
-import { loadModel } from './models.js?v=202611151705';
+import { ROVER, LOOSE_T, maxSpeed, powerKW, pathCost } from './rovermodel.js?v=202611151714';
+import { loadModel } from './models.js?v=202611151714';
 
 export function createDrive(ctx) {
   const { THREE, scene, camera, controls, CSS2DObject, $, toast, store, wUV, elevUV, GW, GH, MPX, MPY, WM, HM, S, findRoute, lineMat, makeLine, MEDIA, CAM } = ctx;
@@ -399,7 +399,7 @@ export function createDrive(ctx) {
   function csv() {
     const cols = ['ev', 't_h', 'km', 'lat', 'lon', 'elev_m', 'grade_deg', 'slope_deg', 'thermal_idx', 'ground', 'speed_kmh', 'power_kw', 'battery_kwh'];
     const rows = X.log.map(p => cols.map(c => typeof p[c] === 'number' ? +p[c].toFixed(5) : `"${p[c]}"`).join(','));
-    const head = `# Jezero Field Tablet traverse log · ${X.def.title}\n# terrain: USGS CTX DEM 20 m; ground: THEMIS night IR (normalized); rover: concept model (assumed parameters)\n`;
+    const head = `# Sol by Sol traverse log · ${X.def.title}\n# terrain: USGS CTX DEM 20 m; ground: THEMIS night IR (normalized); rover: concept model (assumed parameters)\n`;
     const blob = new Blob([head + cols.join(',') + '\n' + rows.join('\n')], { type: 'text/csv' });
     const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `jezero-${X.def.id}-traverse.csv`; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
   }
