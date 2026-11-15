@@ -1,0 +1,315 @@
+{
+  "missions": [
+    {
+      "id": "floor",
+      "title": "First steps on the crater floor",
+      "region": "Crater floor · Séítah",
+      "level": 1,
+      "lander": {
+        "sol": 13,
+        "name": "Octavia E. Butler Landing"
+      },
+      "targets": [
+        8,
+        2,
+        4,
+        6,
+        1
+      ],
+      "budget": 2,
+      "nodes": [
+        {
+          "kind": "lander",
+          "name": "Octavia E. Butler Landing",
+          "u": 0.848851471207379,
+          "v": 0.6032031712814749
+        },
+        {
+          "kind": "target",
+          "no": 8,
+          "name": "Ha'ahóni",
+          "rock": "Igneous",
+          "type": "Rock Core",
+          "sol": 371,
+          "location": "Octavia E. Butler Landing / Ch’ał outcrop",
+          "u": 0.8537466038973263,
+          "v": 0.6081327936292018,
+          "value": 10
+        },
+        {
+          "kind": "target",
+          "no": 2,
+          "name": "Montdenier",
+          "rock": "Igneous",
+          "type": "Rock Core",
+          "sol": 194,
+          "location": "Artuby Ridge",
+          "u": 0.8282433184471457,
+          "v": 0.6975648892133132,
+          "value": 10
+        },
+        {
+          "kind": "target",
+          "no": 4,
+          "name": "Salette",
+          "rock": "Igneous",
+          "type": "Rock Core",
+          "sol": 262,
+          "location": "South Séítah",
+          "u": 0.8239872801770343,
+          "v": 0.6756545777340782,
+          "value": 15
+        },
+        {
+          "kind": "target",
+          "no": 6,
+          "name": "Robine",
+          "rock": "Igneous",
+          "type": "Rock Core",
+          "sol": 298,
+          "location": "South Séítah",
+          "u": 0.8187840126775356,
+          "v": 0.6845111621184874,
+          "value": 15
+        },
+        {
+          "kind": "target",
+          "no": 1,
+          "name": "Roubion",
+          "rock": "n/a",
+          "type": "Atmospheric",
+          "sol": 164,
+          "location": "Polygon Valley",
+          "u": 0.8512665712409923,
+          "v": 0.7182527964903267,
+          "value": 5
+        }
+      ],
+      "best": {
+        "score": 40,
+        "order": [
+          8,
+          4,
+          6
+        ],
+        "hours": 1.65979703618281
+      },
+      "maxScore": 55,
+      "sampleMinutes": 20,
+      "pace": 0.6,
+      "slopeLimit": 25
+    },
+    {
+      "id": "delta",
+      "title": "Reading the ancient lake",
+      "region": "Delta front",
+      "level": 2,
+      "lander": {
+        "sol": 470,
+        "name": "Lander (hypothetical, delta front)"
+      },
+      "targets": [
+        10,
+        12,
+        14,
+        16,
+        17,
+        19
+      ],
+      "budget": 2,
+      "nodes": [
+        {
+          "kind": "lander",
+          "name": "Lander (hypothetical, delta front)",
+          "u": 0.707018609352338,
+          "v": 0.5069480106815948
+        },
+        {
+          "kind": "target",
+          "no": 10,
+          "name": "Swift Run",
+          "rock": "Sedimentary",
+          "type": "Rock Core",
+          "sol": 490,
+          "location": "Delta Front",
+          "u": 0.7075082181931478,
+          "v": 0.5062565682446488,
+          "value": 15
+        },
+        {
+          "kind": "target",
+          "no": 12,
+          "name": "Hazeltop",
+          "rock": "Sedimentary",
+          "type": "Rock Core",
+          "sol": 509,
+          "location": "Delta Front",
+          "u": 0.7067410013082439,
+          "v": 0.5079419591847331,
+          "value": 15
+        },
+        {
+          "kind": "target",
+          "no": 14,
+          "name": "Shuyak",
+          "rock": "Sedimentary",
+          "type": "Rock Core",
+          "sol": 575,
+          "location": "Delta Front",
+          "u": 0.6925660692247031,
+          "v": 0.5617617889101584,
+          "value": 15
+        },
+        {
+          "kind": "target",
+          "no": 16,
+          "name": "Kukaklek",
+          "rock": "Sedimentary",
+          "type": "Rock Core",
+          "sol": 631,
+          "location": "Delta Front",
+          "u": 0.6925554438864283,
+          "v": 0.5556549262064008,
+          "value": 15
+        },
+        {
+          "kind": "target",
+          "no": 17,
+          "name": "Atmo Mountain",
+          "rock": "Mixed sedimentary/igneous grains",
+          "type": "Regolith",
+          "sol": 634,
+          "location": "Delta Front",
+          "u": 0.6919871850549868,
+          "v": 0.5576516496496001,
+          "value": 8
+        },
+        {
+          "kind": "target",
+          "no": 19,
+          "name": "Melyn",
+          "rock": "Sedimentary",
+          "type": "Rock Core",
+          "sol": 749,
+          "location": "Upper Fan",
+          "u": 0.6374029109716229,
+          "v": 0.4293669541868999,
+          "value": 15
+        }
+      ],
+      "best": {
+        "score": 60,
+        "order": [
+          14,
+          16,
+          12,
+          10
+        ],
+        "hours": 1.7532335836491202
+      },
+      "maxScore": 83,
+      "sampleMinutes": 20,
+      "pace": 0.6,
+      "slopeLimit": 25
+    },
+    {
+      "id": "rim",
+      "title": "Life and the crater rim",
+      "region": "Neretva Vallis · Witch Hazel Hill",
+      "level": 3,
+      "lander": {
+        "sol": 1300,
+        "name": "Lander (hypothetical, Neretva Vallis)"
+      },
+      "targets": [
+        25,
+        26,
+        27,
+        28,
+        24
+      ],
+      "budget": 4,
+      "nodes": [
+        {
+          "kind": "lander",
+          "name": "Lander (hypothetical, Neretva Vallis)",
+          "u": 0.34985489104835893,
+          "v": 0.4375906715795297
+        },
+        {
+          "kind": "target",
+          "no": 25,
+          "name": "Sapphire Canyon",
+          "rock": "Sedimentary",
+          "type": "Rock Core",
+          "sol": 1215,
+          "location": "Neretva Vallis",
+          "u": 0.3883442512899931,
+          "v": 0.24405889090433935,
+          "value": 40
+        },
+        {
+          "kind": "target",
+          "no": 26,
+          "name": "Silver Mountain",
+          "rock": "Igneous/impactite",
+          "type": "Rock Core",
+          "sol": 1401,
+          "location": "Crater Rim (Witch Hazel Hill)",
+          "u": 0.26050540967453617,
+          "v": 0.494994149333221,
+          "value": 20
+        },
+        {
+          "kind": "target",
+          "no": 27,
+          "name": "Green Gardens",
+          "rock": "Serpentinite",
+          "type": "Rock Core",
+          "sol": 1433,
+          "location": "Crater Rim (Witch Hazel Hill)",
+          "u": 0.24297911097849387,
+          "v": 0.4891879586308291,
+          "value": 25
+        },
+        {
+          "kind": "target",
+          "no": 28,
+          "name": "Main River",
+          "rock": "Igneous/impactite",
+          "type": "Rock Core",
+          "sol": 1441,
+          "location": "Crater Rim (Witch Hazel Hill)",
+          "u": 0.2407748873672025,
+          "v": 0.4870142479325469,
+          "value": 20
+        },
+        {
+          "kind": "target",
+          "no": 24,
+          "name": "Comet Geyser",
+          "rock": "Silica-cemented carbonate",
+          "type": "Rock Core",
+          "sol": 1088,
+          "location": "Margin Unit",
+          "u": 0.45791868512956785,
+          "v": 0.2824600815792147,
+          "value": 25
+        }
+      ],
+      "best": {
+        "score": 65,
+        "order": [
+          28,
+          27,
+          26
+        ],
+        "hours": 3.2878988433166016
+      },
+      "maxScore": 130,
+      "sampleMinutes": 20,
+      "pace": 0.6,
+      "slopeLimit": 25
+    }
+  ]
+}

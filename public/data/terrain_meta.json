@@ -1,0 +1,25 @@
+{
+  "crs": "Equirectangular / Mars_2000_Sphere (R=3396190 m)",
+  "source": "USGS M20 CTX DEM 20 m/px (planetarymaps.usgs.gov)",
+  "bbox_crs": {
+    "minX": 4339394.997,
+    "minY": 1089838.122,
+    "maxX": 4357182.666,
+    "maxY": 1098561.914
+  },
+  "width_m": 17787.66899999976,
+  "height_m": 8723.792000000132,
+  "grid": {
+    "width": 1024,
+    "height": 503
+  },
+  "meters_per_px": {
+    "x": 17.370770507812267,
+    "y": 17.343522862823324
+  },
+  "elev_min_m": -2648.202392578125,
+  "elev_max_m": -1650.63818359375,
+  "heightmap": "heightmap.png (16-bit grayscale; elev = elev_min + gray/65535 * (elev_max-elev_min))",
+  "elevation_f32": "elevation.f32 (raw Float32 LE, row-major, metres; use for mesh + routing)",
+  "nodata_px": 0
+}

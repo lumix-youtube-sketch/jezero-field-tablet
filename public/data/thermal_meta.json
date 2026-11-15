@@ -1,0 +1,14 @@
+{
+  "layer": "THEMIS_NightIR_ControlledMosaics_100m_v2_oct2018",
+  "source": "NASA Mars Trek WMTS · Mars Odyssey THEMIS night IR controlled mosaic, 100 m/px (ASU/USGS)",
+  "zoom": 9,
+  "stretch": {
+    "lo": 26.077531814575195,
+    "hi": 228.588623046875
+  },
+  "grid": {
+    "width": 1024,
+    "height": 503
+  },
+  "note": "Relative brightness, one 2-98% stretch over the whole crater; not calibrated temperature."
+}

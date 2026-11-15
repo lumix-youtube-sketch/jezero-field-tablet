@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jezero Field Tablet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body class="intro-on">
+<div id="scene"></div>
+
+<!-- ============ TOP BAR ============ -->
+<header id="topbar">
+  <button class="brand" id="btnHome" title="Back to start">
+    <span class="dot"></span>
+    <span class="title">JEZERO FIELD TABLET</span>
+  </button>
+  <nav class="modes" id="modes">
+    <button data-mode="tour">Mission tour</button>
+    <button data-mode="drive">Expeditions</button>
+    <button data-mode="explore">Explore</button>
+  </nav>
+  <div class="topright">
+    <button id="btnOverview" class="icon-btn" title="Whole crater"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+    <button id="btnRover" class="icon-btn" title="Find Perseverance"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></button>
+    <button id="btnHelp" class="icon-btn" title="How to use"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17.5v.01"/></svg></button>
+    <div id="cursor" class="mono"></div>
+  </div>
+</header>
+
+<!-- ============ LEFT PANEL (tour / explore) ============ -->
+<aside id="left" class="panel">
+  <div class="clock">
+    <div class="solrow"><span class="big mono" id="solNum">Sol 13</span><span class="mono dim" id="earthDate">—</span></div>
+    <div class="stats">
+      <div><div class="k">Driven</div><div class="v mono" id="odo">0.0 km</div></div>
+      <div><div class="k">Elevation</div><div class="v mono" id="elevNow">—</div></div>
+      <div><div class="k">Samples</div><div class="v mono" id="sampleCount">0 / 30</div></div>
+    </div>
+    <div class="campaign" id="campaign">Landing site</div>
+  </div>
+  <div id="guideView">
+    <div class="label pad">Mission tour · 10 stops</div>
+    <ol id="guideList"></ol>
+  </div>
+  <div id="detailView" class="hidden">
+    <button id="btnBack" class="link-btn">← All stops</button>
+    <div class="kicker pad" id="dKicker"></div>
+    <h2 id="dTitle"></h2>
+    <div class="dmeta" id="dMeta"></div>
+    <p id="dText"></p>
+    <div id="dLook" class="look"></div>
+    <div class="label pad">What the rover saw</div>
+    <div id="dPhotos" class="photos"></div>
+    <div class="dnav">
+      <button id="btnPrev" class="ghost">Previous</button>
+      <button id="btnNext" class="primary">Next stop</button>
+    </div>
+    <a class="src" id="dSrc" target="_blank" rel="noopener"></a>
+  </div>
+</aside>
+
+<!-- ============ EXPEDITION (drive) ============ -->
+<aside id="xPanel" class="panel hidden">
+  <div class="ev-head">
+    <div class="kicker" id="xKicker">EXPEDITION</div>
+    <button id="btnXMore" class="xmore" title="Briefing &amp; rover data">i</button>
+    <h2 id="xTitle"></h2>
+    <div class="dmeta" id="xRegion"></div>
+  </div>
+  <p class="ev-brief" id="xBrief"></p>
+  <div class="label pad">Science sites <span class="dim" id="xSiteCount"></span></div>
+  <div id="xSites" class="targets"></div>
+  <div class="ev-actions">
+    <button id="btnNavRoute" class="ghost">Show safe route to target</button>
+  </div>
+  <details class="spec">
+    <summary>Rover model &amp; assumptions</summary>
+    <div id="xSpec"></div>
+  </details>
+  <div class="ev-foot">
+    <button id="btnAbort" class="link-btn">← All expeditions</button>
+  </div>
+</aside>
+
+<div id="telemetry" class="hidden">
+  <div class="tm wide" id="tBattery"><div class="mk">Battery</div><div class="mbar"><i></i></div><div class="mv mono"></div></div>
+  <div class="tm wide" id="tClock"><div class="mk">Daylight</div><div class="mbar"><i></i></div><div class="mv mono"></div></div>
+  <div class="tm"><div class="mk">Speed</div><div class="mv mono" id="tSpeed">0</div><div class="mu">km/h</div></div>
+  <div class="tm" id="tTerrain"><div class="mk">Terrain</div><div class="mv mono" id="tGrade">0°</div><div class="mu" id="tGradeU">level</div></div>
+  <div class="tm nav" id="navBox"><div class="mk">Target</div><div class="nb-name" id="navName">—</div><div class="mu mono" id="navDist">—</div>
+    <svg viewBox="0 0 40 40" id="navArrow"><path d="M20 4 30 32 20 26 10 32z"/></svg></div>
+  <div class="tm"><div class="mk">Science</div><div class="mv mono accent" id="tScore">0</div><div class="mu">pts</div></div>
+</div>
+
+<canvas id="minimap" class="hidden" width="240" height="118"></canvas>
+
+<div id="keys" class="hidden">
+  <div class="kgroup">
+    <div class="krow"><span class="key" data-k="w">W</span></div>
+    <div class="krow"><span class="key" data-k="a">A</span><span class="key" data-k="s">S</span><span class="key" data-k="d">D</span></div>
+    <div class="klabel">Drive</div>
+  </div>
+  <div class="ksep"></div>
+  <div class="kgroup">
+    <div class="krow"><span class="key wide" data-k="e">E</span></div>
+    <div class="klabel">Deploy crew</div>
+  </div>
+  <div class="ksep"></div>
+  <div class="kgroup">
+    <div class="krow"><span class="key wide" data-k="r">R</span></div>
+    <div class="klabel">Safe route</div>
+  </div>
+  <div class="ksep"></div>
+  <div class="kgroup">
+    <div class="krow"><span class="key wide" data-k="h">H</span></div>
+    <div class="klabel">Hide HUD</div>
+  </div>
+  <div class="ksep"></div>
+  <div class="kgroup">
+    <div class="krow"><span class="key wide mouse">
+      <svg viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="5"/><path d="M12 3v6"/></svg></span></div>
+    <div class="klabel">Drag · look</div>
+  </div>
+</div>
+
+<div id="prompt" class="hidden"></div>
+
+<!-- field station -->
+<div id="station" class="modal hidden">
+  <div class="card wide">
+    <div class="st-grid">
+      <div class="st-media">
+        <div class="kicker">Orbital view · MRO CTX · 1.2 km</div>
+        <canvas id="sOrbit" width="320" height="320"></canvas>
+        <div class="kicker" style="margin-top:12px" id="sPhotoK">Rover camera</div>
+        <img id="sPhoto" alt="">
+      </div>
+      <div class="st-body">
+        <div class="kicker" id="sKicker">FIELD STATION</div>
+        <h2 id="sTitle"></h2>
+        <div class="dmeta" id="sRegion"></div>
+        <div class="label" style="margin-top:16px">Measurements at this spot</div>
+        <div id="sData" class="statgrid"></div>
+        <div id="sQuiz">
+          <div class="label" style="margin-top:16px">Your call: what rock is this?</div>
+          <div class="quiz" id="sOpts"></div>
+        </div>
+        <div id="sReveal" class="reveal hidden"></div>
+        <button id="btnCollect" class="primary wide hidden">Collect sample &amp; drive on</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- expedition result -->
+<div id="result" class="modal hidden">
+  <div class="card">
+    <div class="kicker" id="rKicker">EXPEDITION COMPLETE</div>
+    <h2 id="rTitle"></h2>
+    <div class="stars" id="rStars"></div>
+    <div class="rstats" id="rStats"></div>
+    <div class="label" style="margin-top:14px;text-align:left">You vs. the safe-route planner</div>
+    <div id="rCompare" class="statgrid"></div>
+    <div class="label" style="margin-top:14px;text-align:left">Your traverse</div>
+    <div class="profile-wrap"><svg id="rProfile" viewBox="0 0 300 80" preserveAspectRatio="none"></svg><div id="rProfLbl" class="mono"></div></div>
+    <p class="note" id="rNote"></p>
+    <div class="row">
+      <button id="btnCSV" class="ghost">Traverse log · CSV</button>
+      <button id="btnRetry" class="ghost">Try again</button>
+      <button id="btnNextX" class="primary">Next expedition</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ RIGHT PANEL ============ -->
+<aside id="right" class="panel">
+  <nav class="tabs">
+    <button data-tab="layers" class="on">Layers</button>
+    <button data-tab="route">Route</button>
+    <button data-tab="missions">Expeditions</button>
+    <button data-tab="data">Data</button>
+  </nav>
+
+  <section data-pane="layers">
+    <div class="seg" id="layerSeg">
+      <button data-layer="imagery" class="on">Imagery</button>
+      <button data-layer="elevation">Elevation</button>
+      <button data-layer="slope">Slope</button>
+      <button data-layer="thermal">Thermal</button>
+    </div>
+    <div id="legend" class="legend"></div>
+    <p id="layerNote" class="note"></p>
+    <div class="toggles">
+      <label class="tg"><input type="checkbox" id="chkTrack" checked><span></span>Rover path</label>
+      <label class="tg"><input type="checkbox" id="chkSamples" checked><span></span>Samples</label>
+      <label class="tg"><input type="checkbox" id="chkStops" checked><span></span>Tour stops</label>
+      <label class="tg"><input type="checkbox" id="chkTint" checked><span></span>Mars tint</label>
+    </div>
+    <div class="slider"><span>Relief</span><input type="range" id="exag" min="1" max="5" step="0.5" value="2"><span class="mono" id="exagV">×2</span></div>
+  </section>
+
+  <section data-pane="route" class="hidden">
+    <p class="note">Plan a walk inside the high-resolution zone (dashed frame). The path never crosses slopes steeper than your limit.</p>
+    <button id="btnPlan" class="primary wide">Pick two points on the map</button>
+    <div class="row sel"><select id="fromSample"></select><span class="dim">→</span><select id="toSample"></select></div>
+    <button id="btnCompare" class="ghost wide">Route between samples</button>
+    <div class="slider"><span>Max slope</span><input type="range" id="slopeLim" min="4" max="35" step="1" value="25"><span class="mono" id="slopeLimV">25°</span></div>
+    <label class="tg"><input type="checkbox" id="chkSand"><span></span>Avoid loose sand (thermal data)</label>
+    <div id="routeOut" class="statgrid empty">No route yet</div>
+    <div id="eva" class="hidden">
+      <div class="label" style="margin-top:14px">Marswalk estimate</div>
+      <div class="profile-wrap"><svg id="profile" viewBox="0 0 300 100" preserveAspectRatio="none"></svg><div id="profLbl" class="mono"></div></div>
+      <div class="slider"><span>EVA budget</span><input type="range" id="evaBudget" min="2" max="9" step="0.5" value="6.5"><span class="mono" id="evaBudgetV">6.5 h</span></div>
+      <div class="slider"><span>Suit pace</span><input type="range" id="pace" min="0.3" max="1" step="0.05" value="0.6"><span class="mono" id="paceV">60%</span></div>
+      <div id="evaOut" class="statgrid"></div>
+      <button id="btnWalk" class="primary wide">Walk this route</button>
+      <p class="note fine">Walking time: Tobler's hiking function × assumed suit pace. Dose: Curiosity RAD surface average, ~0.64 mSv/day. Estimates only.</p>
+    </div>
+    <button id="btnClear" class="link-btn">Clear route</button>
+  </section>
+
+  <section data-pane="missions" class="hidden">
+    <p class="note">Drive a crewed rover across real Jezero terrain. Reach science sites, read the instruments, identify the rock — and get back before the battery or daylight runs out.</p>
+    <div id="missionList"></div>
+  </section>
+
+  <section data-pane="data" class="hidden">
+    <ul class="prov">
+      <li><b>Terrain</b> USGS Mars 2020 CTX DEM, 20 m/px (MRO)</li>
+      <li><b>Imagery</b> MRO CTX orthomosaic, 5 m/px — grayscale; tint is cosmetic</li>
+      <li><b>Close-up detail</b> MRO HiRISE (USGS Mars 2020 mosaics): 1 m/px imagery and 4 m terrain, streamed around the rover</li>
+      <li><b>Thermal</b> Mars Odyssey THEMIS night IR, 100 m/px — relative brightness</li>
+      <li><b>Rover path</b> NASA/JPL “Where is Perseverance”: 708 stops, sol 13–2022</li>
+      <li><b>Samples</b> NASA sample table: 30 tubes, 28 with a published sol</li>
+      <li><b>Photos</b> NASA/JPL-Caltech Mars 2020 raw images</li>
+      <li><b>Crew rover</b> concept vehicle — mass, battery and power are assumptions</li>
+    </ul>
+    <div class="label" style="margin-top:14px">Limits</div>
+    <p class="note">The 20 m grid smooths out boulders and ripples. Real drives use 25 cm HiRISE images and onboard AutoNav. Slopes, walking times, energy and doses here are estimates.</p>
+  </section>
+</aside>
+
+<!-- ============ TIMELINE ============ -->
+<footer id="timeline" class="panel">
+  <button id="btnPlay" class="play" title="Replay the drive"></button>
+  <select id="speed" title="Playback speed"><option value="0.5">1×</option><option value="1.5" selected>3×</option><option value="5">10×</option></select>
+  <label class="tg follow"><input type="checkbox" id="chkFollow" checked><span></span>Follow</label>
+  <div class="tl-wrap">
+    <div id="ticks"></div>
+    <input type="range" id="sol" min="13" max="2022" step="1" value="13">
+  </div>
+  <div class="mono tl-end">Sol 2022</div>
+</footer>
+
+<div id="toasts"></div>
+
+<!-- coach marks -->
+<div id="coach" class="hidden">
+  <div class="spot" id="coachSpot"></div>
+  <div class="tip" id="coachTip">
+    <div class="kicker" id="coachStep"></div>
+    <div class="tip-title" id="coachTitle"></div>
+    <div class="tip-text" id="coachText"></div>
+    <div class="row"><button id="coachSkip" class="link-btn">Skip</button><button id="coachNext" class="primary">Next</button></div>
+  </div>
+</div>
+
+<div id="lightbox" class="hidden"><img id="lbImg" alt=""><div id="lbCap"></div></div>
+
+<!-- ============ INTRO ============ -->
+<div id="intro">
+  <div id="captions"></div>
+  <div class="intro-inner hidden" id="introMain">
+    <div class="kicker">NASA SPACE APPS 2026 · JEZERO CRATER, MARS</div>
+    <h1>Walk where<br>Perseverance drives.</h1>
+    <p class="lede">A 3D field tablet built from real NASA data — the terrain, the rover's 45 km path, its 30 rock samples and what its cameras saw.</p>
+    <div class="modecards">
+      <button class="mc" data-go="tour">
+        <svg viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>
+        <b>Mission tour</b><span>Ten real stops, from landing to today.</span>
+      </button>
+      <button class="mc hot" data-go="drive">
+        <svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="7" rx="3"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/><path d="M8 8l2-3h4l2 3"/></svg>
+        <b>Expeditions</b><span>Drive a crew rover. Read the data, identify the rocks.</span>
+      </button>
+      <button class="mc" data-go="explore">
+        <svg viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5zM3 13l9 5 9-5M3 17.5l9 5 9-5"/></svg>
+        <b>Explore</b><span>Free 3D map with data layers and a route planner.</span>
+      </button>
+    </div>
+    <div class="fine">Data: NASA · JPL-Caltech · USGS · ASU. Nothing is simulated except the routes you plan and the concept crew rover.</div>
+  </div>
+  <button id="btnSkipIntro" class="link-btn skip">Skip intro</button>
+</div>
+
+<div id="loading"><div class="spin"></div><div id="loadMsg">Loading Jezero Crater</div></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

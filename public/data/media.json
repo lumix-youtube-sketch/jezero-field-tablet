@@ -1,0 +1,912 @@
+{
+ "source": "NASA/JPL-Caltech Mars 2020 raw images (mars.nasa.gov)",
+ "media": {
+  "13": [
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00013/ids/edr/browse/ncam/NLF_0013_0668101876_305ECM_N0030028NCAM00104_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00013/ids/edr/browse/ncam/NLF_0013_0668101876_305ECM_N0030028NCAM00104_01_295J01_1200.jpg",
+    "sol": 13,
+    "date": "2021-03-04",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on March 4, 2021 (Sol 13"
+   },
+   {
+    "cam": "FRONT_HAZCAM_LEFT_A",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00013/ids/edr/browse/fcam/FLF_0013_0668101758_836ECM_N0030028FHAZ02002_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00013/ids/edr/browse/fcam/FLF_0013_0668101758_836ECM_N0030028FHAZ02002_01_295J01_1200.jpg",
+    "sol": 13,
+    "date": "2021-03-04",
+    "caption": "NASA's Mars Perseverance rover acquired this image of the area in front of it using its onboard Front Left Hazard Avoidance Camera A. \n\nThis image was acquired on March 4, 2021 (Sol 13) at the local mean solar time of 14"
+   }
+  ],
+  "58": [
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00058/ids/edr/browse/zcam/ZL0_0058_0672092633_568ECM_N0032046ZCAM05033_110085J02_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00058/ids/edr/browse/zcam/ZL0_0058_0672092633_568ECM_N0032046ZCAM05033_110085J02_1200.jpg",
+    "sol": 58,
+    "date": "2021-04-19",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on April 19, 2021 (Sol 58) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00058/ids/edr/browse/ncam/NLF_0058_0672092439_971ECM_N0032046NCAM00412_01_195J02_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00058/ids/edr/browse/ncam/NLF_0058_0672092439_971ECM_N0032046NCAM00412_01_195J02_1200.jpg",
+    "sol": 58,
+    "date": "2021-04-19",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on April 19, 2021 (Sol 5"
+   }
+  ],
+  "59": [
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00059/ids/edr/browse/zcam/ZL6_0059_0672188724_928ECM_N0032046ZCAM01000_0260LUJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00059/ids/edr/browse/zcam/ZL6_0059_0672188724_928ECM_N0032046ZCAM01000_0260LUJ01_1200.jpg",
+    "sol": 59,
+    "date": "2021-04-20",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on April 20, 2021 (Sol 59) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00059/ids/edr/browse/ncam/NLE_0059_0672184725_069ECM_N0032046NCAM00410_00_0LLJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00059/ids/edr/browse/ncam/NLE_0059_0672184725_069ECM_N0032046NCAM00410_00_0LLJ01_1200.jpg",
+    "sol": 59,
+    "date": "2021-04-20",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on April 20, 2021 (Sol 5"
+   }
+  ],
+  "164": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00164/ids/edr/browse/cachecam/CCF_0164_0681524519_791ECM_N0060000CACH00200_01_295J04_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00164/ids/edr/browse/cachecam/CCF_0164_0681524519_791ECM_N0060000CACH00200_01_295J04_1200.jpg",
+    "sol": 164,
+    "date": "2021-08-06",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00164/ids/edr/browse/zcam/ZL0_0164_0681511875_196ECM_N0060000ZCAM05071_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00164/ids/edr/browse/zcam/ZL0_0164_0681511875_196ECM_N0060000ZCAM05071_0340LMJ01_1200.jpg",
+    "sol": 164,
+    "date": "2021-08-06",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Aug. 6, 2021 (Sol 164) at the local mean so"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00164/ids/edr/browse/ncam/NLE_0164_0681510503_755ECM_N0060000NCAM00209_05_0LLJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00164/ids/edr/browse/ncam/NLE_0164_0681510503_755ECM_N0060000NCAM00209_05_0LLJ01_1200.jpg",
+    "sol": 164,
+    "date": "2021-08-06",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Aug. 6, 2021 (Sol 164"
+   }
+  ],
+  "194": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00194/ids/edr/browse/cachecam/CCF_0194_0684179248_776ECM_N0070000CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00194/ids/edr/browse/cachecam/CCF_0194_0684179248_776ECM_N0070000CACH00200_01_295J01_1200.jpg",
+    "sol": 194,
+    "date": "2021-09-06",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00194/ids/edr/browse/zcam/ZL6_0194_0684158351_394ECM_N0070000ZCAM01005_026080J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00194/ids/edr/browse/zcam/ZL6_0194_0684158351_394ECM_N0070000ZCAM01005_026080J01_1200.jpg",
+    "sol": 194,
+    "date": "2021-09-06",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Sept. 6, 2021 (Sol 194) at the local mean s"
+   }
+  ],
+  "196": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00196/ids/edr/browse/cachecam/CCF_0196_0684370467_403ECM_N0070000CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00196/ids/edr/browse/cachecam/CCF_0196_0684370467_403ECM_N0070000CACH00200_01_295J01_1200.jpg",
+    "sol": 196,
+    "date": "2021-09-08",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00196/ids/edr/browse/zcam/ZL0_0196_0684355811_035ECM_N0070000ZCAM05076_1100LUJ08_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00196/ids/edr/browse/zcam/ZL0_0196_0684355811_035ECM_N0070000ZCAM05076_1100LUJ08_1200.jpg",
+    "sol": 196,
+    "date": "2021-09-08",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Sept. 8, 2021 (Sol 196) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00196/ids/edr/browse/ncam/NLE_0196_0684354059_351ECM_N0070000NCAM00209_05_0LLJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00196/ids/edr/browse/ncam/NLE_0196_0684354059_351ECM_N0070000NCAM00209_05_0LLJ01_1200.jpg",
+    "sol": 196,
+    "date": "2021-09-08",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Sept. 8, 2021 (Sol 19"
+   }
+  ],
+  "262": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00262/ids/edr/browse/cachecam/CCF_0262_0690228858_395ECM_N0080000CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00262/ids/edr/browse/cachecam/CCF_0262_0690228858_395ECM_N0080000CACH00200_01_295J01_1200.jpg",
+    "sol": 262,
+    "date": "2021-11-15",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00262/ids/edr/browse/zcam/ZL0_0262_0690212861_460ECM_N0080000ZCAM05071_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00262/ids/edr/browse/zcam/ZL0_0262_0690212861_460ECM_N0080000ZCAM05071_0340LMJ01_1200.jpg",
+    "sol": 262,
+    "date": "2021-11-15",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Nov. 15, 2021 (Sol 262) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00262/ids/edr/browse/ncam/NLE_0262_0690212241_488ECM_N0080000NCAM00705_01_0LLJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00262/ids/edr/browse/ncam/NLE_0262_0690212241_488ECM_N0080000NCAM00705_01_0LLJ01_1200.jpg",
+    "sol": 262,
+    "date": "2021-11-15",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Nov. 15, 2021 (Sol 26"
+   },
+   {
+    "cam": "FRONT_HAZCAM_LEFT_A",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00262/ids/edr/browse/fcam/FLF_0262_0690212307_847EBY_N0080000FHAZ02008_01_0LLJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00262/ids/edr/browse/fcam/FLF_0262_0690212307_847EBY_N0080000FHAZ02008_01_0LLJ01_1200.jpg",
+    "sol": 262,
+    "date": "2021-11-15",
+    "caption": "NASA's Mars Perseverance rover acquired this image of the area in front of it using its onboard Front Left Hazard Avoidance Camera A. \n\nThis image was acquired on Nov. 15, 2021 (Sol 262) at the local mean solar time of 1"
+   }
+  ],
+  "271": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00271/ids/edr/browse/cachecam/CCF_0271_0691027600_895ECM_N0080000CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00271/ids/edr/browse/cachecam/CCF_0271_0691027600_895ECM_N0080000CACH00200_01_295J01_1200.jpg",
+    "sol": 271,
+    "date": "2021-11-24",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00271/ids/edr/browse/zcam/ZL0_0271_0691011449_572ECM_N0080000ZCAM05071_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00271/ids/edr/browse/zcam/ZL0_0271_0691011449_572ECM_N0080000ZCAM05071_0340LMJ01_1200.jpg",
+    "sol": 271,
+    "date": "2021-11-24",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Nov. 24, 2021 (Sol 271) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00271/ids/edr/browse/ncam/NLE_0271_0691011600_601ECM_N0080000NCAM00705_01_0LLJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00271/ids/edr/browse/ncam/NLE_0271_0691011600_601ECM_N0080000NCAM00705_01_0LLJ01_1200.jpg",
+    "sol": 271,
+    "date": "2021-11-24",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Nov. 24, 2021 (Sol 27"
+   }
+  ],
+  "298": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00298/ids/edr/browse/cachecam/CCF_0298_0693413694_370ECM_N0090000CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00298/ids/edr/browse/cachecam/CCF_0298_0693413694_370ECM_N0090000CACH00200_01_295J01_1200.jpg",
+    "sol": 298,
+    "date": "2021-12-22",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00298/ids/edr/browse/zcam/ZL6_0298_0693398460_223ECM_N0090000ZCAM01005_0260LMJ02_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00298/ids/edr/browse/zcam/ZL6_0298_0693398460_223ECM_N0090000ZCAM01005_0260LMJ02_1200.jpg",
+    "sol": 298,
+    "date": "2021-12-21",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Dec. 21, 2021 (Sol 298) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00298/ids/edr/browse/ncam/NLG_0298_0693398651_426ECM_N0090000NCAM00529_00_2I4J02_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00298/ids/edr/browse/ncam/NLG_0298_0693398651_426ECM_N0090000NCAM00529_00_2I4J02_1200.jpg",
+    "sol": 298,
+    "date": "2021-12-21",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Dec. 21, 2021 (Sol 29"
+   }
+  ],
+  "337": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00337/ids/edr/browse/cachecam/CCF_0337_0696883472_224ECM_N0090276CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00337/ids/edr/browse/cachecam/CCF_0337_0696883472_224ECM_N0090276CACH00200_01_295J01_1200.jpg",
+    "sol": 337,
+    "date": "2022-01-31",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00337/ids/edr/browse/zcam/ZL0_0337_0696869169_582ECM_N0090276ZCAM05071_1100LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00337/ids/edr/browse/zcam/ZL0_0337_0696869169_582ECM_N0090276ZCAM05071_1100LMJ01_1200.jpg",
+    "sol": 337,
+    "date": "2022-01-31",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Jan. 31, 2022 (Sol 337) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00337/ids/edr/browse/ncam/NLE_0337_0696868424_756ECM_N0090276NCAM00705_03_0LLJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00337/ids/edr/browse/ncam/NLE_0337_0696868424_756ECM_N0090276NCAM00705_03_0LLJ01_1200.jpg",
+    "sol": 337,
+    "date": "2022-01-31",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Jan. 31, 2022 (Sol 33"
+   }
+  ],
+  "371": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00371/ids/edr/browse/cachecam/CCF_0371_0699901586_147ECM_N0110108CACH00200_01_295J02_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00371/ids/edr/browse/cachecam/CCF_0371_0699901586_147ECM_N0110108CACH00200_01_295J02_1200.jpg",
+    "sol": 371,
+    "date": "2022-03-07",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00371/ids/edr/browse/zcam/ZL0_0371_0699887156_481ECM_N0110108ZCAM05071_0340LMJ02_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00371/ids/edr/browse/zcam/ZL0_0371_0699887156_481ECM_N0110108ZCAM05071_0340LMJ02_1200.jpg",
+    "sol": 371,
+    "date": "2022-03-07",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on March 7, 2022 (Sol 371) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00371/ids/edr/browse/ncam/NLF_0371_0699886394_034EBY_N0110108NCAM00709_09_0LLJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00371/ids/edr/browse/ncam/NLF_0371_0699886394_034EBY_N0110108NCAM00709_09_0LLJ01_1200.jpg",
+    "sol": 371,
+    "date": "2022-03-07",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on March 7, 2022 (Sol 37"
+   }
+  ],
+  "377": [
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00377/ids/edr/browse/zcam/ZL0_0377_0700415972_400ECM_N0110108ZCAM05071_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00377/ids/edr/browse/zcam/ZL0_0377_0700415972_400ECM_N0110108ZCAM05071_0340LMJ01_1200.jpg",
+    "sol": 377,
+    "date": "2022-03-13",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on March 13, 2022 (Sol 377) at the local mean "
+   }
+  ],
+  "490": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00490/ids/edr/browse/cachecam/CCF_0490_0710473129_308ECM_N0261004CACH00200_01_295J02_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00490/ids/edr/browse/cachecam/CCF_0490_0710473129_308ECM_N0261004CACH00200_01_295J02_1200.jpg",
+    "sol": 490,
+    "date": "2022-07-07",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00490/ids/edr/browse/zcam/ZL0_0490_0710456826_413ECM_N0261004ZCAM05071_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00490/ids/edr/browse/zcam/ZL0_0490_0710456826_413ECM_N0261004ZCAM05071_0340LMJ01_1200.jpg",
+    "sol": 490,
+    "date": "2022-07-07",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on July 7, 2022 (Sol 490) at the local mean so"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00490/ids/edr/browse/ncam/NLF_0490_0710456117_926ECM_N0261004NCAM00709_01_095J02_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00490/ids/edr/browse/ncam/NLF_0490_0710456117_926ECM_N0261004NCAM00709_01_095J02_1200.jpg",
+    "sol": 490,
+    "date": "2022-07-07",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on July 7, 2022 (Sol 490"
+   },
+   {
+    "cam": "FRONT_HAZCAM_LEFT_A",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00490/ids/edr/browse/fcam/FLF_0490_0710456238_566ECM_N0261004FHAZ02008_01_095J02_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00490/ids/edr/browse/fcam/FLF_0490_0710456238_566ECM_N0261004FHAZ02008_01_095J02_1200.jpg",
+    "sol": 490,
+    "date": "2022-07-07",
+    "caption": "NASA's Mars Perseverance rover acquired this image of the area in front of it using its onboard Front Left Hazard Avoidance Camera A. \n\nThis image was acquired on July 7, 2022 (Sol 490) at the local mean solar time of 16"
+   }
+  ],
+  "495": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00495/ids/edr/browse/cachecam/CCF_0495_0710916948_372ECM_N0261004CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00495/ids/edr/browse/cachecam/CCF_0495_0710916948_372ECM_N0261004CACH00200_01_295J01_1200.jpg",
+    "sol": 495,
+    "date": "2022-07-12",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00495/ids/edr/browse/zcam/ZL0_0495_0710899987_430ECM_N0261004ZCAM05071_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00495/ids/edr/browse/zcam/ZL0_0495_0710899987_430ECM_N0261004ZCAM05071_0340LMJ01_1200.jpg",
+    "sol": 495,
+    "date": "2022-07-12",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on July 12, 2022 (Sol 495) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00495/ids/edr/browse/ncam/NLF_0495_0710900102_755ECM_N0261004NCAM00709_07_095J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00495/ids/edr/browse/ncam/NLF_0495_0710900102_755ECM_N0261004NCAM00709_07_095J01_1200.jpg",
+    "sol": 495,
+    "date": "2022-07-12",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on July 12, 2022 (Sol 49"
+   }
+  ],
+  "509": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00509/ids/edr/browse/cachecam/CCF_0509_0712158339_778ECM_N0261222CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00509/ids/edr/browse/cachecam/CCF_0509_0712158339_778ECM_N0261222CACH00200_01_295J01_1200.jpg",
+    "sol": 509,
+    "date": "2022-07-27",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00509/ids/edr/browse/zcam/ZL0_0509_0712140530_180ECM_N0261222ZCAM05071_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00509/ids/edr/browse/zcam/ZL0_0509_0712140530_180ECM_N0261222ZCAM05071_0340LMJ01_1200.jpg",
+    "sol": 509,
+    "date": "2022-07-26",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on July 26, 2022 (Sol 509) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00509/ids/edr/browse/ncam/NLF_0509_0712140650_691ECM_N0261222NCAM00709_08_095J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00509/ids/edr/browse/ncam/NLF_0509_0712140650_691ECM_N0261222NCAM00709_08_095J01_1200.jpg",
+    "sol": 509,
+    "date": "2022-07-26",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on July 26, 2022 (Sol 50"
+   }
+  ],
+  "516": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00516/ids/edr/browse/cachecam/CCF_0516_0712777878_927ECM_N0261222CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00516/ids/edr/browse/cachecam/CCF_0516_0712777878_927ECM_N0261222CACH00200_01_295J01_1200.jpg",
+    "sol": 516,
+    "date": "2022-08-03",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00516/ids/edr/browse/zcam/ZL0_0516_0712761484_540ECM_N0261222ZCAM05071_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00516/ids/edr/browse/zcam/ZL0_0516_0712761484_540ECM_N0261222ZCAM05071_0340LMJ01_1200.jpg",
+    "sol": 516,
+    "date": "2022-08-03",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Aug. 3, 2022 (Sol 516) at the local mean so"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00516/ids/edr/browse/ncam/NLF_0516_0712761021_112ECM_N0261222NCAM00709_01_095J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00516/ids/edr/browse/ncam/NLF_0516_0712761021_112ECM_N0261222NCAM00709_01_095J01_1200.jpg",
+    "sol": 516,
+    "date": "2022-08-03",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Aug. 3, 2022 (Sol 516"
+   }
+  ],
+  "575": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00575/ids/edr/browse/cachecam/CCF_0575_0718012671_403ECM_N0290000CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00575/ids/edr/browse/cachecam/CCF_0575_0718012671_403ECM_N0290000CACH00200_01_295J01_1200.jpg",
+    "sol": 575,
+    "date": "2022-10-02",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00575/ids/edr/browse/zcam/ZL0_0575_0717998078_904ECM_N0290000ZCAM05071_0340LMJ02_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00575/ids/edr/browse/zcam/ZL0_0575_0717998078_904ECM_N0290000ZCAM05071_0340LMJ02_1200.jpg",
+    "sol": 575,
+    "date": "2022-10-02",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on  Oct. 2, 2022 (Sol 575) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00575/ids/edr/browse/ncam/NLF_0575_0717997335_774ECM_N0290000NCAM00709_01_095J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00575/ids/edr/browse/ncam/NLF_0575_0717997335_774ECM_N0290000NCAM00709_01_095J01_1200.jpg",
+    "sol": 575,
+    "date": "2022-10-02",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on  Oct. 2, 2022 (Sol 57"
+   }
+  ],
+  "619": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00619/ids/edr/browse/cachecam/CCF_0619_0721919614_540EBYUN0301172CACH00203_07_0LLJ04_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00619/ids/edr/browse/cachecam/CCF_0619_0721919614_540EBYUN0301172CACH00203_07_0LLJ04_1200.jpg",
+    "sol": 619,
+    "date": "2022-11-17",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00619/ids/edr/browse/zcam/ZL7_0619_0721898176_113ECM_N0301172ZCAM01002_1100LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00619/ids/edr/browse/zcam/ZL7_0619_0721898176_113ECM_N0301172ZCAM01002_1100LMJ01_1200.jpg",
+    "sol": 619,
+    "date": "2022-11-16",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Nov. 16, 2022 (Sol 619) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00619/ids/edr/browse/ncam/NLG_0619_0721898505_362ECM_N0301172NCAM00500_00_2I4J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00619/ids/edr/browse/ncam/NLG_0619_0721898505_362ECM_N0301172NCAM00500_00_2I4J01_1200.jpg",
+    "sol": 619,
+    "date": "2022-11-16",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Nov. 16, 2022 (Sol 61"
+   }
+  ],
+  "631": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00631/ids/edr/browse/cachecam/CCF_0631_0722978988_786EBYUN0302188CACH00203_07_0LLJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00631/ids/edr/browse/cachecam/CCF_0631_0722978988_786EBYUN0302188CACH00203_07_0LLJ01_1200.jpg",
+    "sol": 631,
+    "date": "2022-11-29",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   }
+  ],
+  "634": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00634/ids/edr/browse/cachecam/CCF_0634_0723260039_442ECMUN0310000CACH00200_01_295J02_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00634/ids/edr/browse/cachecam/CCF_0634_0723260039_442ECMUN0310000CACH00200_01_295J02_1200.jpg",
+    "sol": 634,
+    "date": "2022-12-02",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00634/ids/edr/browse/zcam/ZL0_0634_0723238272_745ECM_N0310000ZCAM05134_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00634/ids/edr/browse/zcam/ZL0_0634_0723238272_745ECM_N0310000ZCAM05134_0340LMJ01_1200.jpg",
+    "sol": 634,
+    "date": "2022-12-02",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Dec. 2, 2022 (Sol 634) at the local mean so"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00634/ids/edr/browse/ncam/NLF_0634_0723238492_135ECM_N0310000NCAM00709_01_095J02_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00634/ids/edr/browse/ncam/NLF_0634_0723238492_135ECM_N0310000NCAM00709_01_095J02_1200.jpg",
+    "sol": 634,
+    "date": "2022-12-02",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Dec. 2, 2022 (Sol 634"
+   }
+  ],
+  "639": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00639/ids/edr/browse/cachecam/CCF_0639_0723701091_025ECMUN0310000CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00639/ids/edr/browse/cachecam/CCF_0639_0723701091_025ECMUN0310000CACH00200_01_295J01_1200.jpg",
+    "sol": 639,
+    "date": "2022-12-07",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00639/ids/edr/browse/zcam/ZL0_0639_0723682177_900ECM_N0310000ZCAM05134_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00639/ids/edr/browse/zcam/ZL0_0639_0723682177_900ECM_N0310000ZCAM05134_0340LMJ01_1200.jpg",
+    "sol": 639,
+    "date": "2022-12-07",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Dec. 7, 2022 (Sol 639) at the local mean so"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00639/ids/edr/browse/ncam/NLF_0639_0723682394_977ECM_N0310000NCAM00709_01_095J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00639/ids/edr/browse/ncam/NLF_0639_0723682394_977ECM_N0310000NCAM00709_01_095J01_1200.jpg",
+    "sol": 639,
+    "date": "2022-12-07",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Dec. 7, 2022 (Sol 639"
+   }
+  ],
+  "654": [
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00654/ids/edr/browse/zcam/ZL7_0654_0725005370_239ECM_N0320250ZCAM01002_1100LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00654/ids/edr/browse/zcam/ZL7_0654_0725005370_239ECM_N0320250ZCAM01002_1100LMJ01_1200.jpg",
+    "sol": 654,
+    "date": "2022-12-22",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Dec. 22, 2022 (Sol 654) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00654/ids/edr/browse/ncam/NLF_0654_0725008793_634ECM_N0320250NCAM05654_01_195J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00654/ids/edr/browse/ncam/NLF_0654_0725008793_634ECM_N0320250NCAM05654_01_195J01_1200.jpg",
+    "sol": 654,
+    "date": "2022-12-22",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Dec. 22, 2022 (Sol 65"
+   },
+   {
+    "cam": "FRONT_HAZCAM_LEFT_A",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00654/ids/edr/browse/fcam/FLF_0654_0725006993_551ECM_N0320250FHAZ02008_01_095J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00654/ids/edr/browse/fcam/FLF_0654_0725006993_551ECM_N0320250FHAZ02008_01_095J01_1200.jpg",
+    "sol": 654,
+    "date": "2022-12-22",
+    "caption": "NASA's Mars Perseverance rover acquired this image of the area in front of it using its onboard Front Left Hazard Avoidance Camera A. \n\nThis image was acquired on Dec. 22, 2022 (Sol 654) at the local mean solar time of 1"
+   }
+  ],
+  "655": [
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00655/ids/edr/browse/zcam/ZL0_0655_0725100696_428ECM_N0320250ZCAM08650_1100LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00655/ids/edr/browse/zcam/ZL0_0655_0725100696_428ECM_N0320250ZCAM08650_1100LMJ01_1200.jpg",
+    "sol": 655,
+    "date": "2022-12-23",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Dec. 23, 2022 (Sol 655) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00655/ids/edr/browse/ncam/NLG_0655_0725098346_237ECM_N0320250NCAM00500_00_2I4J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00655/ids/edr/browse/ncam/NLG_0655_0725098346_237ECM_N0320250NCAM00500_00_2I4J01_1200.jpg",
+    "sol": 655,
+    "date": "2022-12-23",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Dec. 23, 2022 (Sol 65"
+   }
+  ],
+  "656": [
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00656/ids/edr/browse/zcam/ZL0_0656_0725189475_443ECM_N0320250ZCAM08650_1100LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00656/ids/edr/browse/zcam/ZL0_0656_0725189475_443ECM_N0320250ZCAM08650_1100LMJ01_1200.jpg",
+    "sol": 656,
+    "date": "2022-12-24",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Dec. 24, 2022 (Sol 656) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00656/ids/edr/browse/ncam/NLG_0656_0725178673_862ECM_N0320250NCAM00500_00_2I4J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00656/ids/edr/browse/ncam/NLG_0656_0725178673_862ECM_N0320250NCAM00500_00_2I4J01_1200.jpg",
+    "sol": 656,
+    "date": "2022-12-24",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Dec. 24, 2022 (Sol 65"
+   }
+  ],
+  "660": [],
+  "690": [
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00690/ids/edr/browse/zcam/ZL0_0690_0728207466_613ECM_N0321184ZCAM08690_1100LMJ05_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00690/ids/edr/browse/zcam/ZL0_0690_0728207466_613ECM_N0321184ZCAM08690_1100LMJ05_1200.jpg",
+    "sol": 690,
+    "date": "2023-01-28",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Jan. 28, 2023 (Sol 690) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00690/ids/edr/browse/ncam/NLF_0690_0728217610_880ECM_N0321184NCAM00514_01_295J05_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00690/ids/edr/browse/ncam/NLF_0690_0728217610_880ECM_N0321184NCAM00514_01_295J05_1200.jpg",
+    "sol": 690,
+    "date": "2023-01-28",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Jan. 28, 2023 (Sol 69"
+   }
+  ],
+  "749": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00749/ids/edr/browse/cachecam/CCF_0749_0733468274_245ECMUN0370000CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00749/ids/edr/browse/cachecam/CCF_0749_0733468274_245ECMUN0370000CACH00200_01_295J01_1200.jpg",
+    "sol": 749,
+    "date": "2023-03-30",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00749/ids/edr/browse/zcam/ZL0_0749_0733450476_670ECM_N0370000ZCAM05071_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00749/ids/edr/browse/zcam/ZL0_0749_0733450476_670ECM_N0370000ZCAM05071_0340LMJ01_1200.jpg",
+    "sol": 749,
+    "date": "2023-03-30",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on March 30, 2023 (Sol 749) at the local mean "
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00749/ids/edr/browse/ncam/NLF_0749_0733449728_990ECM_N0370000NCAM00709_09_095J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00749/ids/edr/browse/ncam/NLF_0749_0733449728_990ECM_N0370000NCAM00709_09_095J01_1200.jpg",
+    "sol": 749,
+    "date": "2023-03-30",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on March 30, 2023 (Sol 7"
+   },
+   {
+    "cam": "FRONT_HAZCAM_LEFT_A",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00749/ids/edr/browse/fcam/FLF_0749_0733449861_909ECM_N0370000FHAZ02008_01_095J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00749/ids/edr/browse/fcam/FLF_0749_0733449861_909ECM_N0370000FHAZ02008_01_095J01_1200.jpg",
+    "sol": 749,
+    "date": "2023-03-30",
+    "caption": "NASA's Mars Perseverance rover acquired this image of the area in front of it using its onboard Front Left Hazard Avoidance Camera A. \n\nThis image was acquired on March 30, 2023 (Sol 749) at the local mean solar time of "
+   }
+  ],
+  "832": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00832/ids/edr/browse/cachecam/CCF_0832_0740806204_099ECMUN0400132CACH00200_01_295J02_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00832/ids/edr/browse/cachecam/CCF_0832_0740806204_099ECMUN0400132CACH00200_01_295J02_1200.jpg",
+    "sol": 832,
+    "date": "2023-06-23",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00832/ids/edr/browse/zcam/ZL6_0832_0740814494_098ECM_N0400132ZCAM01023_034050J03_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00832/ids/edr/browse/zcam/ZL6_0832_0740814494_098ECM_N0400132ZCAM01023_034050J03_1200.jpg",
+    "sol": 832,
+    "date": "2023-06-23",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on June 23, 2023 (Sol 832) at the local mean s"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00832/ids/edr/browse/ncam/NLG_0832_0740814849_440ECM_N0400132NCAM00520_00_2I4J03_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00832/ids/edr/browse/ncam/NLG_0832_0740814849_440ECM_N0400132NCAM00520_00_2I4J03_1200.jpg",
+    "sol": 832,
+    "date": "2023-06-23",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on June 23, 2023 (Sol 83"
+   }
+  ],
+  "913": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00913/ids/edr/browse/cachecam/CCE_0913_0748014289_135ECMUN0450000CACH00203_06_0LLJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00913/ids/edr/browse/cachecam/CCE_0913_0748014289_135ECMUN0450000CACH00203_06_0LLJ01_1200.jpg",
+    "sol": 913,
+    "date": "2023-09-15",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00913/ids/edr/browse/zcam/ZL7_0913_0747990050_910ECM_N0450000ZCAM01077_1100LMJ02_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00913/ids/edr/browse/zcam/ZL7_0913_0747990050_910ECM_N0450000ZCAM01077_1100LMJ02_1200.jpg",
+    "sol": 913,
+    "date": "2023-09-14",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Sept. 14, 2023 (Sol 913) at the local mean "
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00913/ids/edr/browse/ncam/NLG_0913_0747990288_925ECM_N0450000NCAM00520_00_2I4J02_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00913/ids/edr/browse/ncam/NLG_0913_0747990288_925ECM_N0450000NCAM00520_00_2I4J02_1200.jpg",
+    "sol": 913,
+    "date": "2023-09-14",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Sept. 14, 2023 (Sol 9"
+   }
+  ],
+  "923": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00923/ids/edr/browse/cachecam/CCF_0923_0748915491_305ECMUN0450000CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00923/ids/edr/browse/cachecam/CCF_0923_0748915491_305ECMUN0450000CACH00200_01_295J01_1200.jpg",
+    "sol": 923,
+    "date": "2023-09-25",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00923/ids/edr/browse/zcam/ZL0_0923_0748891816_542ECM_N0450000ZCAM05071_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00923/ids/edr/browse/zcam/ZL0_0923_0748891816_542ECM_N0450000ZCAM05071_0340LMJ01_1200.jpg",
+    "sol": 923,
+    "date": "2023-09-25",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Sept. 25, 2023 (Sol 923) at the local mean "
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00923/ids/edr/browse/ncam/NLF_0923_0748891047_145ECM_N0450000NCAM00709_02_095J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00923/ids/edr/browse/ncam/NLF_0923_0748891047_145ECM_N0450000NCAM00709_02_095J01_1200.jpg",
+    "sol": 923,
+    "date": "2023-09-25",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Sept. 25, 2023 (Sol 9"
+   }
+  ],
+  "949": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00949/ids/edr/browse/cachecam/CCF_0949_0751198091_721ECMUN0460000CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00949/ids/edr/browse/cachecam/CCF_0949_0751198091_721ECMUN0460000CACH00200_01_295J01_1200.jpg",
+    "sol": 949,
+    "date": "2023-10-21",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00949/ids/edr/browse/zcam/ZL6_0949_0751179792_223ECM_N0460000ZCAM01058_034080J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00949/ids/edr/browse/zcam/ZL6_0949_0751179792_223ECM_N0460000ZCAM01058_034080J01_1200.jpg",
+    "sol": 949,
+    "date": "2023-10-21",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on  Oct. 21, 2023 (Sol 949) at the local mean "
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00949/ids/edr/browse/ncam/NLR_0949_0751180180_490ECM_N0460000NCAM00502_01_1I6J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00949/ids/edr/browse/ncam/NLR_0949_0751180180_490ECM_N0460000NCAM00502_01_1I6J01_1200.jpg",
+    "sol": 949,
+    "date": "2023-10-21",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on  Oct. 21, 2023 (Sol 9"
+   }
+  ],
+  "1088": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01088/ids/edr/browse/cachecam/CCF_1088_0763553495_119ECMUN0510000CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01088/ids/edr/browse/cachecam/CCF_1088_0763553495_119ECMUN0510000CACH00200_01_295J01_1200.jpg",
+    "sol": 1088,
+    "date": "2024-03-12",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01088/ids/edr/browse/zcam/ZL0_1088_0763540083_701ECM_N0510000ZCAM05071_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01088/ids/edr/browse/zcam/ZL0_1088_0763540083_701ECM_N0510000ZCAM05071_0340LMJ01_1200.jpg",
+    "sol": 1088,
+    "date": "2024-03-12",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on March 12, 2024 (Sol 1088) at the local mean"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01088/ids/edr/browse/ncam/NLF_1088_0763540196_597ECM_N0510000NCAM00709_05_095J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01088/ids/edr/browse/ncam/NLF_1088_0763540196_597ECM_N0510000NCAM00709_05_095J01_1200.jpg",
+    "sol": 1088,
+    "date": "2024-03-12",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on March 12, 2024 (Sol 1"
+   },
+   {
+    "cam": "FRONT_HAZCAM_LEFT_A",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01088/ids/edr/browse/fcam/FLF_1088_0763540322_159ECM_N0510000FHAZ02008_07_095J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01088/ids/edr/browse/fcam/FLF_1088_0763540322_159ECM_N0510000FHAZ02008_07_095J01_1200.jpg",
+    "sol": 1088,
+    "date": "2024-03-12",
+    "caption": "NASA's Mars Perseverance rover acquired this image of the area in front of it using its onboard Front Left Hazard Avoidance Camera A. \n\nThis image was acquired on March 12, 2024 (Sol 1088) at the local mean solar time of"
+   }
+  ],
+  "1212": [
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01212/ids/edr/browse/zcam/ZL6_1212_0774547842_193ECM_N0560000ZCAM01063_034080J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01212/ids/edr/browse/zcam/ZL6_1212_0774547842_193ECM_N0560000ZCAM01063_034080J01_1200.jpg",
+    "sol": 1212,
+    "date": "2024-07-18",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on July 18, 2024 (Sol 1212) at the local mean "
+   },
+   {
+    "cam": "FRONT_HAZCAM_LEFT_A",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01212/ids/edr/browse/fcam/FLF_1212_0774538850_112ECM_N0560000FHAZ00206_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01212/ids/edr/browse/fcam/FLF_1212_0774538850_112ECM_N0560000FHAZ00206_01_295J01_1200.jpg",
+    "sol": 1212,
+    "date": "2024-07-18",
+    "caption": "NASA's Mars Perseverance rover acquired this image of the area in front of it using its onboard Front Left Hazard Avoidance Camera A. \n\nThis image was acquired on July 18, 2024 (Sol 1212) at the local mean solar time of "
+   }
+  ],
+  "1215": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01215/ids/edr/browse/cachecam/CCF_1215_0774830009_119ECMUN0560000CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01215/ids/edr/browse/cachecam/CCF_1215_0774830009_119ECMUN0560000CACH00200_01_295J01_1200.jpg",
+    "sol": 1215,
+    "date": "2024-07-21",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01215/ids/edr/browse/zcam/ZL0_1215_0774815868_374ECM_N0560000ZCAM05071_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01215/ids/edr/browse/zcam/ZL0_1215_0774815868_374ECM_N0560000ZCAM05071_0340LMJ01_1200.jpg",
+    "sol": 1215,
+    "date": "2024-07-21",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on July 21, 2024 (Sol 1215) at the local mean "
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01215/ids/edr/browse/ncam/NLF_1215_0774814981_145ECM_N0560000NCAM00709_02_095J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01215/ids/edr/browse/ncam/NLF_1215_0774814981_145ECM_N0560000NCAM00709_02_095J01_1200.jpg",
+    "sol": 1215,
+    "date": "2024-07-21",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on July 21, 2024 (Sol 12"
+   }
+  ],
+  "1401": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01401/ids/edr/browse/cachecam/CCF_1401_0791341837_679ECMUN0660000CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01401/ids/edr/browse/cachecam/CCF_1401_0791341837_679ECMUN0660000CACH00200_01_295J01_1200.jpg",
+    "sol": 1401,
+    "date": "2025-01-28",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01401/ids/edr/browse/zcam/ZL0_1401_0791327908_337ECM_N0660000ZCAM05071_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01401/ids/edr/browse/zcam/ZL0_1401_0791327908_337ECM_N0660000ZCAM05071_0340LMJ01_1200.jpg",
+    "sol": 1401,
+    "date": "2025-01-28",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on Jan. 28, 2025 (Sol 1401) at the local mean "
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01401/ids/edr/browse/ncam/NLF_1401_0791327203_270ECM_N0660000NCAM00709_07_095J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01401/ids/edr/browse/ncam/NLF_1401_0791327203_270ECM_N0660000NCAM00709_07_095J01_1200.jpg",
+    "sol": 1401,
+    "date": "2025-01-28",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on Jan. 28, 2025 (Sol 14"
+   },
+   {
+    "cam": "FRONT_HAZCAM_LEFT_A",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01401/ids/edr/browse/fcam/FLF_1401_0791327312_691ECM_N0660000FHAZ02008_04_095J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01401/ids/edr/browse/fcam/FLF_1401_0791327312_691ECM_N0660000FHAZ02008_04_095J01_1200.jpg",
+    "sol": 1401,
+    "date": "2025-01-28",
+    "caption": "NASA's Mars Perseverance rover acquired this image of the area in front of it using its onboard Front Left Hazard Avoidance Camera A. \n\nThis image was acquired on Jan. 28, 2025 (Sol 1401) at the local mean solar time of "
+   }
+  ],
+  "1433": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01433/ids/edr/browse/cachecam/CCE_1433_0794183923_676ECMUN0692000CACH00203_06_0LLJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01433/ids/edr/browse/cachecam/CCE_1433_0794183923_676ECMUN0692000CACH00203_06_0LLJ01_1200.jpg",
+    "sol": 1433,
+    "date": "2025-03-02",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01433/ids/edr/browse/zcam/ZL7_1433_0794156948_473ECM_N0692000ZCAM01002_1100LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01433/ids/edr/browse/zcam/ZL7_1433_0794156948_473ECM_N0692000ZCAM01002_1100LMJ01_1200.jpg",
+    "sol": 1433,
+    "date": "2025-03-02",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on March 2, 2025 (Sol 1433) at the local mean "
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01433/ids/edr/browse/ncam/NLG_1433_0794157719_065ECM_N0692000NCAM00500_00_2I4J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01433/ids/edr/browse/ncam/NLG_1433_0794157719_065ECM_N0692000NCAM00500_00_2I4J01_1200.jpg",
+    "sol": 1433,
+    "date": "2025-03-02",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on March 2, 2025 (Sol 14"
+   }
+  ],
+  "1441": [
+   {
+    "cam": "CACHECAM",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01441/ids/edr/browse/cachecam/CCF_1441_0794888979_777ECMUN0692124CACH00200_01_295J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01441/ids/edr/browse/cachecam/CCF_1441_0794888979_777ECMUN0692124CACH00200_01_295J01_1200.jpg",
+    "sol": 1441,
+    "date": "2025-03-10",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Sample Caching System Camera (CacheCam), located inside the rover underbelly. It looks down into the top of a sample tube to take close-up pictures of "
+   },
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01441/ids/edr/browse/zcam/ZL0_1441_0794877922_607ECM_N0692124ZCAM05071_0340LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01441/ids/edr/browse/zcam/ZL0_1441_0794877922_607ECM_N0692124ZCAM05071_0340LMJ01_1200.jpg",
+    "sol": 1441,
+    "date": "2025-03-10",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on March 10, 2025 (Sol 1441) at the local mean"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01441/ids/edr/browse/ncam/NLF_1441_0794877220_820ECM_N0692124NCAM00709_07_095J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01441/ids/edr/browse/ncam/NLF_1441_0794877220_820ECM_N0692124NCAM00709_07_095J01_1200.jpg",
+    "sol": 1441,
+    "date": "2025-03-10",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on March 10, 2025 (Sol 1"
+   }
+  ],
+  "2022": [
+   {
+    "cam": "MCZ_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/02022/ids/edr/browse/zcam/ZL0_2022_0846456664_206ECM_N0930000ZCAM07125_1100LMJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/02022/ids/edr/browse/zcam/ZL0_2022_0846456664_206ECM_N0930000ZCAM07125_1100LMJ01_1200.jpg",
+    "sol": 2022,
+    "date": "2026-10-28",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its Left Mastcam-Z camera. Mastcam-Z is a pair of cameras located high on the rover's mast.\n\nThis image was acquired on  Oct. 28, 2026 (Sol 2022) at the local mean"
+   },
+   {
+    "cam": "NAVCAM_LEFT",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/02022/ids/edr/browse/ncam/NLG_2022_0846456749_879ECM_N0930000SCAM04022_00_1LLJ01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/02022/ids/edr/browse/ncam/NLG_2022_0846456749_879ECM_N0930000SCAM04022_00_1LLJ01_1200.jpg",
+    "sol": 2022,
+    "date": "2026-10-28",
+    "caption": "NASA's Mars Perseverance rover acquired this image using its onboard Left Navigation Camera (Navcam). The camera is located high on the rover's mast and aids in driving. \n\nThis image was acquired on  Oct. 28, 2026 (Sol 2"
+   },
+   {
+    "cam": "FRONT_HAZCAM_LEFT_A",
+    "url": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/02022/ids/edr/browse/fcam/FLF_2022_0846447347_237ECM_N0930000FHAZ02008_10_090J01_800.jpg",
+    "full": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/02022/ids/edr/browse/fcam/FLF_2022_0846447347_237ECM_N0930000FHAZ02008_10_090J01_1200.jpg",
+    "sol": 2022,
+    "date": "2026-10-28",
+    "caption": "NASA's Mars Perseverance rover acquired this image of the area in front of it using its onboard Front Left Hazard Avoidance Camera A. \n\nThis image was acquired on  Oct. 28, 2026 (Sol 2022) at the local mean solar time of"
+   }
+  ]
+ }
+}

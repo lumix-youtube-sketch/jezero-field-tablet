@@ -1,0 +1,21 @@
+{
+  "bbox_crs": {
+    "minX": 4329292.10812596,
+    "minY": 1042231.6352073746,
+    "maxX": 4417958.78925043,
+    "maxY": 1143247.424174998
+  },
+  "width_m": 88666.68112446927,
+  "height_m": 101015.78896762338,
+  "grid": {
+    "width": 512,
+    "height": 583
+  },
+  "elev_min_m": -3446.37353515625,
+  "elev_max_m": -491.89398193359375,
+  "texture": {
+    "width": 3072,
+    "height": 3500
+  },
+  "source": "USGS M20 CTX DEM 20 m + CTX ortho 5 m, downsampled"
+}
