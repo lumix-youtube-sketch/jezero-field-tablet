@@ -1,0 +1,392 @@
+{
+  "rover": {
+    "name": "Crew rover (concept)",
+    "massKg": 3000,
+    "g": 3.71,
+    "crrFirm": 0.08,
+    "crrLoose": 0.25,
+    "eta": 0.8,
+    "hotelKW": 1.5,
+    "vmaxKmh": 12,
+    "maxSlopeDeg": 25,
+    "stopMin": 30
+  },
+  "expeditions": [
+    {
+      "id": "floor",
+      "title": "Shakedown on the crater floor",
+      "region": "Crater floor · Séítah",
+      "level": 1,
+      "lander": {
+        "sol": 13,
+        "name": "Octavia E. Butler Landing"
+      },
+      "sites": [
+        8,
+        2,
+        4,
+        6,
+        7
+      ],
+      "nodes": [
+        {
+          "kind": "lander",
+          "name": "Octavia E. Butler Landing",
+          "u": 0.848851471207379,
+          "v": 0.6032031712814749
+        },
+        {
+          "kind": "site",
+          "no": 8,
+          "name": "Ha'ahóni",
+          "feature": "Sid",
+          "rock": "Igneous",
+          "type": "Rock Core",
+          "sol": 371,
+          "date": "2022-03-07",
+          "location": "Octavia E. Butler Landing / Ch’ał outcrop",
+          "u": 0.8537466038973263,
+          "v": 0.6081327936292018,
+          "value": 10,
+          "cls": "igneous"
+        },
+        {
+          "kind": "site",
+          "no": 2,
+          "name": "Montdenier",
+          "feature": "Rochette",
+          "rock": "Igneous",
+          "type": "Rock Core",
+          "sol": 194,
+          "date": "2021-09-06",
+          "location": "Artuby Ridge",
+          "u": 0.8282433184471457,
+          "v": 0.6975648892133132,
+          "value": 10,
+          "cls": "igneous"
+        },
+        {
+          "kind": "site",
+          "no": 4,
+          "name": "Salette",
+          "feature": "Brac",
+          "rock": "Igneous",
+          "type": "Rock Core",
+          "sol": 262,
+          "date": "2021-11-15",
+          "location": "South Séítah",
+          "u": 0.8239872801770343,
+          "v": 0.6756545777340782,
+          "value": 15,
+          "cls": "igneous"
+        },
+        {
+          "kind": "site",
+          "no": 6,
+          "name": "Robine",
+          "feature": "Issole",
+          "rock": "Igneous",
+          "type": "Rock Core",
+          "sol": 298,
+          "date": "2021-12-22",
+          "location": "South Séítah",
+          "u": 0.8187840126775356,
+          "v": 0.6845111621184874,
+          "value": 15,
+          "cls": "igneous"
+        },
+        {
+          "kind": "site",
+          "no": 7,
+          "name": "Malay",
+          "feature": "Issole",
+          "rock": "Igneous",
+          "type": "Rock Core",
+          "sol": 337,
+          "date": "2022-01-31",
+          "location": "South Séítah",
+          "u": 0.8185975351801297,
+          "v": 0.6848612392409135,
+          "value": 15,
+          "cls": "igneous"
+        }
+      ],
+      "maxScore": 99,
+      "battery": 6,
+      "window": 6,
+      "best": {
+        "score": 99,
+        "order": [
+          8,
+          2,
+          4,
+          6,
+          7
+        ],
+        "kwh": 4.801797719326464,
+        "h": 2.7028651098684993
+      }
+    },
+    {
+      "id": "delta",
+      "title": "Crossing to the ancient delta",
+      "region": "Crater floor → delta front → upper fan",
+      "level": 2,
+      "lander": {
+        "sol": 13,
+        "name": "Octavia E. Butler Landing"
+      },
+      "sites": [
+        4,
+        10,
+        12,
+        14,
+        16,
+        19
+      ],
+      "nodes": [
+        {
+          "kind": "lander",
+          "name": "Octavia E. Butler Landing",
+          "u": 0.848851471207379,
+          "v": 0.6032031712814749
+        },
+        {
+          "kind": "site",
+          "no": 4,
+          "name": "Salette",
+          "feature": "Brac",
+          "rock": "Igneous",
+          "type": "Rock Core",
+          "sol": 262,
+          "date": "2021-11-15",
+          "location": "South Séítah",
+          "u": 0.8239872801770343,
+          "v": 0.6756545777340782,
+          "value": 15,
+          "cls": "igneous"
+        },
+        {
+          "kind": "site",
+          "no": 10,
+          "name": "Swift Run",
+          "feature": "Skinner Ridge",
+          "rock": "Sedimentary",
+          "type": "Rock Core",
+          "sol": 490,
+          "date": "2022-07-07",
+          "location": "Delta Front",
+          "u": 0.7075082181931478,
+          "v": 0.5062565682446488,
+          "value": 15,
+          "cls": "sedimentary"
+        },
+        {
+          "kind": "site",
+          "no": 12,
+          "name": "Hazeltop",
+          "feature": "Wildcat Ridge",
+          "rock": "Sedimentary",
+          "type": "Rock Core",
+          "sol": 509,
+          "date": "2022-07-27",
+          "location": "Delta Front",
+          "u": 0.7067410013082439,
+          "v": 0.5079419591847331,
+          "value": 15,
+          "cls": "sedimentary"
+        },
+        {
+          "kind": "site",
+          "no": 14,
+          "name": "Shuyak",
+          "feature": "Amalik",
+          "rock": "Sedimentary",
+          "type": "Rock Core",
+          "sol": 575,
+          "date": "2022-10-02",
+          "location": "Delta Front",
+          "u": 0.6925660692247031,
+          "v": 0.5617617889101584,
+          "value": 15,
+          "cls": "sedimentary"
+        },
+        {
+          "kind": "site",
+          "no": 16,
+          "name": "Kukaklek",
+          "feature": "Hidden Harbor",
+          "rock": "Sedimentary",
+          "type": "Rock Core",
+          "sol": 631,
+          "date": "2022-11-29",
+          "location": "Delta Front",
+          "u": 0.6925554438864283,
+          "v": 0.5556549262064008,
+          "value": 15,
+          "cls": "sedimentary"
+        },
+        {
+          "kind": "site",
+          "no": 19,
+          "name": "Melyn",
+          "feature": "Berea",
+          "rock": "Sedimentary",
+          "type": "Rock Core",
+          "sol": 749,
+          "date": "2023-03-30",
+          "location": "Upper Fan",
+          "u": 0.6374029109716229,
+          "v": 0.4293669541868999,
+          "value": 15,
+          "cls": "sedimentary"
+        }
+      ],
+      "maxScore": 138,
+      "battery": 9,
+      "window": 6,
+      "best": {
+        "score": 115,
+        "order": [
+          4,
+          10,
+          12,
+          14,
+          16
+        ],
+        "kwh": 8.145088584452969,
+        "h": 3.2211722435792454
+      }
+    },
+    {
+      "id": "rim",
+      "title": "Expedition to the crater rim",
+      "region": "Margin unit · Neretva Vallis · Witch Hazel Hill",
+      "level": 3,
+      "lander": {
+        "sol": 470,
+        "name": "Delta front base camp"
+      },
+      "sites": [
+        19,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "nodes": [
+        {
+          "kind": "lander",
+          "name": "Delta front base camp",
+          "u": 0.707018609352338,
+          "v": 0.5069480106815948
+        },
+        {
+          "kind": "site",
+          "no": 19,
+          "name": "Melyn",
+          "feature": "Berea",
+          "rock": "Sedimentary",
+          "type": "Rock Core",
+          "sol": 749,
+          "date": "2023-03-30",
+          "location": "Upper Fan",
+          "u": 0.6374029109716229,
+          "v": 0.4293669541868999,
+          "value": 15,
+          "cls": "sedimentary"
+        },
+        {
+          "kind": "site",
+          "no": 24,
+          "name": "Comet Geyser",
+          "feature": "Bunsen Peak",
+          "rock": "Silica-cemented carbonate",
+          "type": "Rock Core",
+          "sol": 1088,
+          "date": "2024-03-12",
+          "location": "Margin Unit",
+          "u": 0.45791868512956785,
+          "v": 0.2824600815792147,
+          "value": 25,
+          "cls": "altered"
+        },
+        {
+          "kind": "site",
+          "no": 25,
+          "name": "Sapphire Canyon",
+          "feature": "Cheyava Falls",
+          "rock": "Sedimentary",
+          "type": "Rock Core",
+          "sol": 1215,
+          "date": "2024-07-21",
+          "location": "Neretva Vallis",
+          "u": 0.3883442512899931,
+          "v": 0.24405889090433935,
+          "value": 40,
+          "cls": "sedimentary"
+        },
+        {
+          "kind": "site",
+          "no": 26,
+          "name": "Silver Mountain",
+          "feature": "Shallow Bay",
+          "rock": "Igneous/impactite",
+          "type": "Rock Core",
+          "sol": 1401,
+          "date": "2025-01-28",
+          "location": "Crater Rim (Witch Hazel Hill)",
+          "u": 0.26050540967453617,
+          "v": 0.494994149333221,
+          "value": 20,
+          "cls": "igneous"
+        },
+        {
+          "kind": "site",
+          "no": 27,
+          "name": "Green Gardens",
+          "feature": "Tablelands",
+          "rock": "Serpentinite",
+          "type": "Rock Core",
+          "sol": 1433,
+          "date": "2025-03-02",
+          "location": "Crater Rim (Witch Hazel Hill)",
+          "u": 0.24297911097849387,
+          "v": 0.4891879586308291,
+          "value": 25,
+          "cls": "altered"
+        },
+        {
+          "kind": "site",
+          "no": 28,
+          "name": "Main River",
+          "feature": "Broom Point",
+          "rock": "Igneous/impactite",
+          "type": "Rock Core",
+          "sol": 1441,
+          "date": "2025-03-10",
+          "location": "Crater Rim (Witch Hazel Hill)",
+          "u": 0.2407748873672025,
+          "v": 0.4870142479325469,
+          "value": 20,
+          "cls": "igneous"
+        }
+      ],
+      "maxScore": 219,
+      "battery": 16,
+      "window": 7,
+      "best": {
+        "score": 166,
+        "order": [
+          24,
+          25,
+          26,
+          27
+        ],
+        "kwh": 15.950249253039539,
+        "h": 4.248163942133687
+      }
+    }
+  ]
+}
