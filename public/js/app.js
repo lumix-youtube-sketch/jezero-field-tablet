@@ -7,10 +7,10 @@ import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer
 import { Line2 } from 'three/addons/lines/Line2.js';
 import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
 import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
-import { findRoute, straightLine } from './route.js?v=202611151917';
-import { createDrive } from './drive.js?v=202611151917';
-import { createHiRes } from './hirise.js?v=202611151917';
-import { loadModel } from './models.js?v=202611151917';
+import { findRoute, straightLine } from './route.js?v=202611152226';
+import { createDrive } from './drive.js?v=202611152226';
+import { createHiRes } from './hirise.js?v=202611152226';
+import { loadModel } from './models.js?v=202611152226';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 
 const $ = (id) => document.getElementById(id);
@@ -916,4 +916,5 @@ if (!restoreState()) {
 }
 loop();
 $('loading').classList.add('hidden');
-window.__app = { openGuide, openSample, setTrackPos, setMode, drive, hi, EXPED, PLACED, camera, controls };
+window.__app = { openGuide, openSample, setTrackPos, setMode, drive, hi, EXPED, PLACED, camera, controls,
+  plan: (a, b) => { compare = null; pA = a; pB = b; selectTab('route'); const r = runRoute(); return !!(r && r.found); } };   // used by the demo-video recorder

@@ -1,8 +1,8 @@
 // Crew-rover expeditions: drive a concept pressurized rover across real Jezero terrain.
 // Real data drives the physics and the science: CTX DEM slope/elevation, THEMIS night-IR ground
 // type, NASA sample table, rover raw images. Vehicle numbers are assumptions (rovermodel.js).
-import { ROVER, LOOSE_T, maxSpeed, powerKW, pathCost } from './rovermodel.js?v=202611151917';
-import { loadModel } from './models.js?v=202611151917';
+import { ROVER, LOOSE_T, maxSpeed, powerKW, pathCost } from './rovermodel.js?v=202611152226';
+import { loadModel } from './models.js?v=202611152226';
 
 export function createDrive(ctx) {
   const { THREE, scene, camera, controls, CSS2DObject, $, toast, store, wUV, elevUV, GW, GH, MPX, MPY, WM, HM, S, findRoute, lineMat, makeLine, MEDIA, CAM } = ctx;
