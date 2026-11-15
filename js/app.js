@@ -7,10 +7,10 @@ import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer
 import { Line2 } from 'three/addons/lines/Line2.js';
 import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
 import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
-import { findRoute, straightLine } from './route.js?v=202611152226';
-import { createDrive } from './drive.js?v=202611152226';
-import { createHiRes } from './hirise.js?v=202611152226';
-import { loadModel } from './models.js?v=202611152226';
+import { findRoute, straightLine } from './route.js?v=202611152253';
+import { createDrive } from './drive.js?v=202611152253';
+import { createHiRes } from './hirise.js?v=202611152253';
+import { loadModel } from './models.js?v=202611152253';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 
 const $ = (id) => document.getElementById(id);
@@ -697,7 +697,7 @@ function setViewOffset() {
 }
 function setMode(m) {
   mode = m; document.body.classList.remove('intro-on'); $('intro').classList.add('hidden'); controls.autoRotate = false; setViewOffset();
-  document.body.classList.toggle('mode-drive', m === 'drive');
+  document.body.classList.toggle('mode-drive', m === 'drive'); document.body.classList.toggle('mode-explore', m === 'explore');
   document.querySelectorAll('#modes button').forEach(b => b.classList.toggle('on', b.dataset.mode === m));
   if (m !== 'drive') exitMission();
   if (m === 'tour') { selectTab('layers'); layer = 'imagery'; applyLayer(); openGuide(curGuide >= 0 ? curGuide : 0); }
@@ -706,7 +706,7 @@ function setMode(m) {
 }
 function goHome() {
   exitMission(); stopPlay(); mode = null;
-  document.body.classList.add('intro-on'); document.body.classList.remove('mode-drive'); $('intro').classList.remove('hidden'); $('introMain').classList.remove('hidden');
+  document.body.classList.add('intro-on'); document.body.classList.remove('mode-drive', 'mode-explore'); $('intro').classList.remove('hidden'); $('introMain').classList.remove('hidden');
   controls.autoRotate = true; setViewOffset(); overview();
 }
 document.querySelectorAll('.mc').forEach(b => b.onclick = () => setMode(b.dataset.go));

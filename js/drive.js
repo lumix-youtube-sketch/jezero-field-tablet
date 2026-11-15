@@ -1,8 +1,8 @@
 // Crew-rover expeditions: drive a concept pressurized rover across real Jezero terrain.
 // Real data drives the physics and the science: CTX DEM slope/elevation, THEMIS night-IR ground
 // type, NASA sample table, rover raw images. Vehicle numbers are assumptions (rovermodel.js).
-import { ROVER, LOOSE_T, maxSpeed, powerKW, pathCost } from './rovermodel.js?v=202611152226';
-import { loadModel } from './models.js?v=202611152226';
+import { ROVER, LOOSE_T, maxSpeed, powerKW, pathCost } from './rovermodel.js?v=202611152253';
+import { loadModel } from './models.js?v=202611152253';
 
 export function createDrive(ctx) {
   const { THREE, scene, camera, controls, CSS2DObject, $, toast, store, wUV, elevUV, GW, GH, MPX, MPY, WM, HM, S, findRoute, lineMat, makeLine, MEDIA, CAM } = ctx;
@@ -524,6 +524,12 @@ export function createDrive(ctx) {
     if (k === 'c') { look.lock = !look.lock; toast(look.lock ? 'Camera angle locked · press C to release' : 'Camera follows the rover'); }
   });
   addEventListener('keyup', e => { const k = e.key.toLowerCase(); keys[k] = false; const kc = document.querySelector(`.key[data-k="${k}"]`); if (kc) kc.classList.remove('on'); });
+  // on-screen keys double as touch controls (phones, tablets)
+  document.querySelectorAll('#keys .key[data-k]').forEach(el => {
+    const k = el.dataset.k, fire = t => dispatchEvent(new KeyboardEvent(t, { key: k }));
+    el.addEventListener('pointerdown', e => { e.preventDefault(); el.setPointerCapture?.(e.pointerId); fire('keydown'); });
+    for (const t of ['pointerup', 'pointercancel']) el.addEventListener(t, () => fire('keyup'));
+  });
   addEventListener('blur', () => { keys = {}; document.querySelectorAll('.key.on').forEach(k => k.classList.remove('on')); });
   addEventListener('wheel', e => { if (!X) return; camDist = Math.min(90, Math.max(3, camDist * (1 + e.deltaY * 0.0012))); }, { passive: true });
 
