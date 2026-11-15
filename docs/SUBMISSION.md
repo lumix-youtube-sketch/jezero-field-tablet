@@ -28,7 +28,8 @@ Jezero Field Tablet is an interactive 3D map of the area of Jezero Crater, Mars,
 
 ## Link to Final Project
 
-`[ВСТАВИТЬ: публичная ссылка — GitHub-репозиторий и/или живой сайт (GitHub Pages)]`
+https://lumix-youtube-sketch.github.io/jezero-field-tablet/  
+(source code: https://github.com/lumix-youtube-sketch/jezero-field-tablet)
 
 ---
 
