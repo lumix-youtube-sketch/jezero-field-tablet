@@ -7,10 +7,10 @@ import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer
 import { Line2 } from 'three/addons/lines/Line2.js';
 import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
 import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
-import { findRoute, straightLine } from './route.js';
-import { createDrive } from './drive.js';
-import { createHiRes } from './hirise.js';
-import { loadModel } from './models.js';
+import { findRoute, straightLine } from './route.js?v=202611151705';
+import { createDrive } from './drive.js?v=202611151705';
+import { createHiRes } from './hirise.js?v=202611151705';
+import { loadModel } from './models.js?v=202611151705';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 
 const $ = (id) => document.getElementById(id);
@@ -909,7 +909,11 @@ function restoreState() {
   fly = null; camera.position.fromArray(s.cam); controls.target.fromArray(s.tgt); controls.update();
   return true;
 }
-if (!restoreState()) playIntro();
+// first visit: cinematic intro; later visits: straight back to where the user was (or the mode picker)
+if (!restoreState()) {
+  if (store.get('jft-intro-seen')) { camera.position.copy(INTRO_END); finishIntro(); }
+  else { store.set('jft-intro-seen', 1); playIntro(); }
+}
 loop();
 $('loading').classList.add('hidden');
 window.__app = { openGuide, openSample, setTrackPos, setMode, drive, hi, EXPED, PLACED, camera, controls };
