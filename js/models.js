@@ -24,7 +24,12 @@ export function loadModel(url, { length, zUp = 'auto', yaw = 0 }) {
     inner.position.set(-c.x, -box.min.y, -c.z);
     obj.traverse(o => {
       if (!o.isMesh) return; o.castShadow = true; o.receiveShadow = true;
-      for (const m of [].concat(o.material || [])) { m.side = THREE.FrontSide; if (m.metalness > 0.5) m.metalness = 0.5; m.envMapIntensity = 1.2; }
+      for (const m of [].concat(o.material || [])) {
+        m.side = THREE.FrontSide; if (m.metalness > 0.5) m.metalness = 0.5; m.envMapIntensity = 1.2;
+        // transmission/clearcoat force extra render passes every frame: swap for cheap transparency
+        if (m.transmission > 0) { m.transmission = 0; m.transparent = true; m.opacity = 0.55; }
+        if (m.clearcoat > 0) m.clearcoat = 0;
+      }
     });
     resolve(wrap);
   }, undefined, reject));
