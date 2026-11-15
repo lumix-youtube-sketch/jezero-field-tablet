@@ -8,15 +8,15 @@
 
 ## Project Name
 
-**Jezero Field Tablet**
+**Sol by Sol**
 
-(подзаголовок, если поле позволяет: *Relive Perseverance's real mission on real NASA terrain — then plan your own safe traverse*)
+(подзаголовок, если поле позволяет: *Mars, one sol at a time — explore, replay and drive Jezero Crater on real NASA data*)
 
 ---
 
 ## High-Level Project Summary
 
-Jezero Field Tablet is an interactive 3D map of the area of Jezero Crater, Mars, where NASA's Perseverance rover is driving today. It is built only from real NASA and USGS data: orbital terrain, orbital imagery, the rover's actual 45 km path and all 30 rock samples from NASA's official sample table. Users replay the mission sol by sol, open each sample to learn what was drilled and why, and plan their own route. The route planner finds the safest path between any two points: it never crosses slopes steeper than a chosen limit. It then compares that path with the distance the rover actually drove, and turns it into a crew Marswalk plan: walking time, EVA time budget, a turnaround point and radiation dose. Users can also drive a concept crew rover across the crater. Slope, loose sand and battery use are computed from real orbital data, and at real sample sites the user identifies each rock from on-the-spot measurements before seeing NASA's answer. This answers the challenge directly. It layers terrain, imagery, slope hazard and mission data at the hyperlocal scale of a single excursion, which global tools like Mars Trek do not focus on. It puts astronaut safety first by making slope hazards visible and computing routes around them. Because every point on the map is a real mission decision, the tool also teaches what we already know about one of the best places on Mars to look for signs of ancient life.
+Sol by Sol is an interactive 3D map of the area of Jezero Crater, Mars, where NASA's Perseverance rover is driving today. It is built only from real NASA and USGS data: orbital terrain, orbital imagery, the rover's actual 45 km path and all 30 rock samples from NASA's official sample table. Users replay the mission sol by sol, open each sample to learn what was drilled and why, and plan their own route. The route planner finds the safest path between any two points: it never crosses slopes steeper than a chosen limit. It then compares that path with the distance the rover actually drove, and turns it into a crew Marswalk plan: walking time, EVA time budget, a turnaround point and radiation dose. Users can also drive a concept crew rover across the crater. Slope, loose sand and battery use are computed from real orbital data, and at real sample sites the user identifies each rock from on-the-spot measurements before seeing NASA's answer. This answers the challenge directly. It layers terrain, imagery, slope hazard and mission data at the hyperlocal scale of a single excursion, which global tools like Mars Trek do not focus on. It puts astronaut safety first by making slope hazards visible and computing routes around them. Because every point on the map is a real mission decision, the tool also teaches what we already know about one of the best places on Mars to look for signs of ancient life.
 
 ---
 
@@ -37,7 +37,7 @@ https://lumix-youtube-sketch.github.io/jezero-field-tablet/
 
 **What it does**
 
-Jezero Field Tablet turns the whole of Jezero Crater (an 89 × 101 km area) into an interactive 3D field map, the kind of tool a crew could use on a tablet in the habitat before and during a surface excursion. Inside it, a high-resolution zone of 17.8 × 8.7 km covers everywhere Perseverance has driven since February 2021: the Octavia E. Butler landing site, the crater floor, the ancient river delta, and the crater rim it is exploring now.
+Sol by Sol turns the whole of Jezero Crater (an 89 × 101 km area) into an interactive 3D field map, the kind of tool a crew could use on a tablet in the habitat before and during a surface excursion. Inside it, a high-resolution zone of 17.8 × 8.7 km covers everywhere Perseverance has driven since February 2021: the Octavia E. Butler landing site, the crater floor, the ancient river delta, and the crater rim it is exploring now.
 
 It has seven parts:
 
@@ -116,7 +116,7 @@ Yes. We used an AI coding assistant (Claude, by Anthropic) to speed up developme
 
 | Время | Что на экране | Текст (EN) |
 |---|---|---|
-| 0:00–0:03 | Титульник с названием | "We're `[ВСТАВИТЬ: команда]`, and this is Jezero Field Tablet." |
+| 0:00–0:03 | Титульник с названием | "We're `[ВСТАВИТЬ: команда]`, and this is Sol by Sol." |
 | 0:03–0:08 | Облёт 3D-рельефа Езеро | "The first astronauts on Mars will need maps built for a single walk, not the whole planet." |
 | 0:08–0:16 | Play на таймлайне: ровер едет, клик по Cheyava Falls | "Using real NASA data, you replay Perseverance's 45-kilometer drive and see every one of its rock samples — and why it was taken." |
 | 0:16–0:24 | Expeditions → едешь на ровере по кратеру (телеметрия, стрелка) → E на точке → полевая станция с данными → выбор породы → настоящий керн | "Then drive a crew rover over real terrain: slope and sand from orbital data, energy from physics — and identify each rock from real measurements." |
